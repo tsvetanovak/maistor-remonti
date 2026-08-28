@@ -1,0 +1,927 @@
+
+<!-- FRAME: https://craftsman-bulgaria.preview.emergentagent.com/ -->
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100vh;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="contentFrame" src="https://app.emergent.sh/loading-preview?host=craftsman-bulgaria.preview.emergentagent.com" allowfullscreen=""></iframe>
+    <script>
+        // Listen for messages from the iframe
+        window.addEventListener('message', function(event) {
+
+        	console.log(event.origin);
+            // Optional: Add origin check for security
+            // if (!['https://dev.emergentagent.com', 'https://app.emergent.sh'].includes(event.origin)) return;
+
+            if (event.data && event.data.type === 'reload') {
+                const iframe = document.getElementById('contentFrame');
+                window.location.reload();
+            }
+
+            if (event.data && event.data.type === 'url') {
+                const iframe = document.getElementById('contentFrame');
+                window.open(event.data.url, '_blank');
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a319285fa9b4a72c',t:'MTc4NzgxMzU5MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;7f7b0fd8732c4326aae4b9d58d5c514a&quot;}" crossorigin="anonymous"></script>
+
+</body></html>
+<!-- FRAME: https://app.emergent.sh/loading-preview?host=craftsman-bulgaria.preview.emergentagent.com -->
+<html lang="en" class="dark" style="--bg-primary: 20 20 20; --bg-secondary: 17 17 18; --bg-tertiary: 26 26 27; --bg-elevated: 32 32 33; --bg-inverse: 255 255 255; --bg-surface: 24 24 26; --bg-panel: 17 17 18; --bg-accent-blue: 128 255 249; --bg-primary-hex: #141414; --bg-secondary-hex: #111112; --bg-elevated-hex: #202021; --bg-surface-hex: #18181A; --bg-tertiary-hex: #1A1A1B; --txt-primary: 221 221 230; --txt-secondary: 115 119 128; --txt-tertiary: 92 95 102; --txt-inverse: 15 15 16; --txt-muted: 147 147 153; --txt-value: 196 196 204; --txt-strong: 221 221 230; --txt-primary-hex: #DDDDE6; --txt-secondary-hex: #737780; --txt-tertiary-hex: #5C5F66; --txt-muted-hex: #939399; --txt-value-hex: #C4C4CC; --txt-strong-hex: #DDDDE6; --txt-inverse-hex: #0F0F10; --bdr: 36 36 36; --bdr-subtle: 26 26 26; --bdr-strong: 51 51 51; --bdr-medium: 48 48 48; --bdr-focus: 46 187 229; --bdr-hex: #242424; --bdr-subtle-hex: #1A1A1A; --bdr-strong-hex: #333333; --bdr-medium-hex: #303030; --status-success: 41 204 131; --status-warning: 244 155 87; --status-error: 237 91 91; --status-info: 46 187 229; --status-pending: 143 143 152; --acc-primary: 46 187 229; --acc-secondary: 128 255 249; --acc-gold: 243 202 95; --acc-purple: 187 161 229; --acc-green: 46 229 114; --acc-yellow: 248 255 153; --test-mode: 102 234 255; --acc-gold-hex: #F3CA5F; --acc-secondary-hex: #80FFF9; --acc-green-hex: #2EE572; --icon-primary: #FFFFFF; --icon-secondary: #8F8F98; --icon-accent: #80FFF9; --icon-inverse: #0F0F10; --icon-muted: #7B7B80; --acc-blue: #33CCFF; --acc-action: #FFFFFF; --recent-task-bg: rgba(15, 15, 16, 0.01); --recent-task-header-bg: #18181A; --recent-task-border: #252629; --recent-task-row-hover: #1C1C1E; --recent-task-text-id: #92929A; --recent-task-text-description: rgba(255, 255, 255, 0.5); --recent-task-text-muted: rgba(255, 255, 255, 0.4); --recent-task-text-timestamp: #C2C2CC; --recent-task-pagination-active-bg: rgba(255, 255, 255, 0.05); --recent-task-pagination-active-border: rgba(255, 255, 255, 0.06); --recent-task-pagination-hover: #2d2d2d; --recent-task-pagination-text: #8f8f98; --recent-task-select-bg: #1A1A1A; --recent-task-select-text: #FFFFFF; --recent-task-shimmer: #252629; --recent-task-accent: #80FFF9; --recent-task-accent-bg: rgba(128, 255, 249, 0.08); --recent-task-divider: rgba(255, 255, 255, 0.2); --recent-task-tab-inactive: #ffffff; --recent-task-menu-btn-bg: rgba(255, 255, 255, 0.15); --header-bg: rgba(30, 30, 31, 0.8); --active-tab-bg: #141414; --active-tab-bg-create: #161617; --active-tab-border-default: rgba(255, 255, 255, 0.15); --active-tab-border-agent: rgba(248, 255, 153, 0.5); --active-tab-border-subagent: rgba(221, 153, 255, 0.5); --header-credits-bg: rgba(243, 202, 95, 0.1); --header-credits-hover-bg: rgba(243, 202, 95, 0.2); --header-credits-text: #F3CA5F; --header-credits-shadow: none; --header-icon-btn-bg: rgba(255, 255, 255, 0.1); --header-icon-btn-hover-bg: rgba(255, 255, 255, 0.2); --header-icon-btn-shadow: none; --header-avatar-ring-bg: rgba(255, 255, 255, 0.3); --header-gift-icon-color: #80FFF9;"><head>
+    <!-- Prevent theme flash: Apply stored theme immediately before page renders -->
+    <script type="text/javascript" async="" src="https://dynamic.criteo.com/js/ld/ld.js?a=128092&amp;a=130464&amp;a=130465&amp;a=130463"></script><script async="" src="https://bat.bing.com/p/conversions/s/0.8.69"></script><script async="" src="https://bat.bing.com/p/conversions/t/343243455"></script><script async="" src="https://snap.licdn.com/li.lms-analytics/insight.old.min.js"></script><script async="" src="https://snap.licdn.com/li.lms-analytics/insight.old.min.js"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/static/main.MTgxMDg1OGQ1MQ.js" data-id="D2DN3IJC77U5663GUR8G"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/static/main.MTgxMDg1OGQ1MQ.js" data-id="D4FFK4BC77UCLPL6NL90"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=D2DN3IJC77U5663GUR8G&amp;lib=ttq"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=D4FFK4BC77UCLPL6NL90&amp;lib=ttq"></script><script type="text/javascript" async="" src="https://www.redditstatic.com/ads/pixel.js?pixel_id=a2_j5liqozo732k"></script><script type="text/javascript" async="" src="https://cdn.taboola.com/libtrc/unip/2047569/tfa.js"></script><script type="text/javascript" async="" src="https://a.quora.com/qevents.js"></script><script type="text/javascript" async="" src="https://c.amazon-adsystem.com/aat/amzn.js"></script><script type="text/javascript" async="" src="https://bat.bing.com/bat.js"></script><script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script><script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=AW-17438382802&amp;cx=c&amp;gtm=4e68p1"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=AW-17435340384&amp;cx=c&amp;gtm=4e68p1"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/static/identify_ea043f1c.js"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/static/main.MTgxMDg1OGQ1MQ.js" data-id="D8LPE6JC77UDGOQM9GI0"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=D8LPE6JC77UDGOQM9GI0&amp;lib=ttq"></script><script src="https://connect.facebook.net/signals/config/1732229534163388?v=2.9.385&amp;r=stable&amp;domain=craftsman-bulgaria.preview.emergentagent.com&amp;hme=1a72ec78e057d90ba48afa55a82b063b1c9b6ab7c0155009fecc72226a622ed2&amp;ex_m=113%2C218%2C164%2C25%2C78%2C79%2C156%2C74%2C73%2C11%2C174%2C98%2C19%2C148%2C136%2C43%2C81%2C86%2C144%2C169%2C176%2C29%2C17%2C30%2C31%2C32%2C34%2C52%2C157%2C83%2C121%2C21%2C23%2C48%2C44%2C46%2C45%2C91%2C100%2C104%2C119%2C155%2C158%2C50%2C120%2C27%2C24%2C128%2C75%2C40%2C160%2C159%2C161%2C152%2C150%2C28%2C39%2C63%2C118%2C171%2C76%2C20%2C123%2C89%2C72%2C22%2C93%2C94%2C125%2C92%2C146%2C145%2C149%2C105%2C170%2C173%2C38%2C53%2C122%2C51%2C8%2C4%2C5%2C7%2C6%2C3%2C99%2C110%2C177%2C185%2C232%2C80%2C245%2C244%2C243%2C14%2C26%2C37%2C59%2C112%2C65%2C10%2C69%2C106%2C107%2C108%2C114%2C139%2C35%2C33%2C141%2C142%2C143%2C138%2C137%2C165%2C82%2C168%2C166%2C167%2C54%2C64%2C132%2C18%2C172%2C49%2C293%2C294%2C292%2C307%2C329%2C225%2C214%2C66%2C215%2C213%2C332%2C323%2C56%2C226%2C116%2C140%2C88%2C130%2C58%2C129%2C135%2C134%2C62%2C70%2C68%2C162%2C84%2C85%2C124%2C41%2C36%2C57%2C60%2C109%2C175%2C1%2C133%2C16%2C131%2C12%2C2%2C61%2C101%2C15%2C71%2C67%2C127%2C97%2C96%2C178%2C179%2C102%2C103%2C9%2C111%2C55%2C153%2C95%2C87%2C77%2C126%2C115%2C47%2C154%2C0%2C90%2C147%2C151%2C163%2C42%2C117%2C13%2C180%2C242%2C240%2C235%2C237%2C238%2C239%2C236%2C224%2C241%2C234%2C206%2C200%2C204%2C205%2C203%2C198%2C351%2C275%2C279%2C282%2C283%2C284%2C280%2C285%2C278%2C273%2C287%2C288%2C277%2C286%2C281%2C276%2C289%2C290%2C274%2C217%2C272%2C209%2C201%2C202%2C228%2C199%2C197%2C249%2C219%2C191%2C192%2C187%2C193%2C190%2C188%2C189%2C186%2C184%2C195%2C196%2C194%2C295%2C350%2C316%2C317%2C314%2C315%2C313%2C207%2C252%2C259%2C260%2C253%2C255%2C258%2C256%2C257%2C254%2C251%2C270%2C264%2C267%2C263%2C271%2C268%2C262%2C266%2C269%2C265%2C261%2C309%2C326" async=""></script><script src="https://connect.facebook.net/signals/config/1326372205570201?v=2.9.385&amp;r=stable&amp;domain=craftsman-bulgaria.preview.emergentagent.com&amp;hme=1a72ec78e057d90ba48afa55a82b063b1c9b6ab7c0155009fecc72226a622ed2&amp;ex_m=113%2C218%2C164%2C25%2C78%2C79%2C156%2C74%2C73%2C11%2C174%2C98%2C19%2C148%2C136%2C43%2C81%2C86%2C144%2C169%2C176%2C29%2C17%2C30%2C31%2C32%2C34%2C52%2C157%2C83%2C121%2C21%2C23%2C48%2C44%2C46%2C45%2C91%2C100%2C104%2C119%2C155%2C158%2C50%2C120%2C27%2C24%2C128%2C75%2C40%2C160%2C159%2C161%2C152%2C150%2C28%2C39%2C63%2C118%2C171%2C76%2C20%2C123%2C89%2C72%2C22%2C93%2C94%2C125%2C92%2C146%2C145%2C149%2C105%2C170%2C173%2C38%2C53%2C122%2C51%2C8%2C4%2C5%2C7%2C6%2C3%2C99%2C110%2C177%2C185%2C232%2C80%2C245%2C244%2C243%2C14%2C26%2C37%2C59%2C112%2C65%2C10%2C69%2C106%2C107%2C108%2C114%2C139%2C35%2C33%2C141%2C142%2C143%2C138%2C137%2C165%2C82%2C168%2C166%2C167%2C54%2C64%2C132%2C18%2C172%2C49%2C293%2C294%2C292%2C307%2C329%2C225%2C214%2C66%2C215%2C213%2C332%2C323%2C56%2C226%2C116%2C140%2C88%2C130%2C58%2C129%2C135%2C134%2C62%2C70%2C68%2C162%2C84%2C85%2C124%2C41%2C36%2C57%2C60%2C109%2C175%2C1%2C133%2C16%2C131%2C12%2C2%2C61%2C101%2C15%2C71%2C67%2C127%2C97%2C96%2C178%2C179%2C102%2C103%2C9%2C111%2C55%2C153%2C95%2C87%2C77%2C126%2C115%2C47%2C154%2C0%2C90%2C147%2C151%2C163%2C42%2C117%2C13%2C180" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-NCCB99P9"></script><script>
+      (function () {
+        try {
+          var theme = localStorage.getItem("emergent-theme");
+          if (!theme) {
+            var isLoggedIn = Object.keys(localStorage).some(function (k) {
+              return k.startsWith("sb-") && k.endsWith("-auth-token");
+            });
+            theme = isLoggedIn ? "dark" : "system";
+          }
+          if (theme === "light" || (theme === "system" && window.matchMedia("(prefers-color-scheme: light)").matches)) {
+            document.documentElement.classList.remove("dark");
+            document.documentElement.classList.add("light");
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <!-- Tracking allowlist — gates GTM/VWO/Rewardful/PartnerStack/Meta/TikTok Pixel to prod hosts only.
+         (For PartnerStack — an essential-category script — this host gate is the ONLY gate.)
+         Prevents third-party tracking scripts from firing on preview/CDN hosts (e.g. *.preview.emergentagent.com)
+         where our bundle is served as a wake-up page, which would attribute pixel events to user-preview domains. -->
+    <script>
+      (function () {
+        var ALLOWED_TRACKING_HOSTS = ["app.emergent.sh", "dev.emergentagent.com"];
+        window.__emergentTrackingAllowed = ALLOWED_TRACKING_HOSTS.indexOf(window.location.hostname) !== -1;
+        var h = window.location.hostname;
+        // Exact or subdomain suffix match, not substring: a bare indexOf lets a crafted hostname
+        // (e.g. getwingman.sh.attacker.com) satisfy the wingman consent/host gate.
+        window.__wingmanTrackingAllowed =
+          h === "getwingman.sh" ||
+          h.endsWith(".getwingman.sh") ||
+          h === "getwingman.com" ||
+          h.endsWith(".getwingman.com");
+      })();
+    </script>
+    <!-- GDPR consent gate — synchronous, must run right after the host allowlist above and BEFORE
+         every GTM/gtag/pixel block below. Reads the edge verdict cookie (emergent_geo_consent:
+         "1" = consent required, "0" = not required; missing = FAIL-OPEN, i.e. NOT required) and the
+         user's choice cookie (emergent_consent, which carries per-category grants in `cats`).
+         PER-CATEGORY gate: each NON-Google script gates on host allowed AND its category's grant —
+           __emergentAdvertisingAllowed (Meta/TikTok/Rewardful),
+           __emergentAnalyticsAllowed (VWO). These stay fully blocked until consent.
+         PartnerStack is the exception: disclosed as ESSENTIAL (partner referral attribution), so it
+         boots on __emergentHostAllowed alone and no category grant gates it.
+         GOOGLE tags (Consent Mode v2 BASIC / opt-in) also load only AFTER consent — withheld entirely
+         until the relevant category is granted: GTM gates on __emergentGoogleTagsAllowed (host AND
+         advertising consent) and the Wingman GA4 gtag on __wingmanGoogleTagsAllowed (host AND analytics
+         consent). Consent Mode signals (default-denied -> per-category granted) below still govern
+         storage once a tag loads. __emergentTrackingAllowed is kept as the coarse host AND (advertising
+         OR analytics) signal for the gtmService dataLayer funnel.
+         PRECEDENCE: an explicit stored choice OUTRANKS the verdict and is honoured in every region.
+         Only a visitor with NO stored choice falls back to the verdict, so verdict "0" + no choice
+         (the 99% rest-of-world case, who never saw a banner) leaves every flag byte-for-byte at
+         today's values and pushes no Consent Mode calls (rest-of-world invariant preserved).
+         Mirrors isCategoryAllowed/getConsentCategories in src/lib/consent/consent.ts — keep the
+         readers in sync. -->
+    <script>
+      (function () {
+        function escapeForRegExp(s) {
+          return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        }
+        function readCookie(name) {
+          try {
+            var match = document.cookie.match(new RegExp("(^|;\\s*)" + escapeForRegExp(name) + "=([^;]*)"));
+            return match ? match[2] : null;
+          } catch (e) {
+            // document.cookie can throw (sandboxed iframe / fully blocked storage). Return null so the
+            // gate proceeds on the fail-open default (verdict null -> not required -> trackers allowed),
+            // matching consent.ts. A stored choice is not lost with it: the localStorage mirror read
+            // below still recovers an earlier accept/reject whenever storage itself is readable.
+            console.warn("[consent-gate]", e);
+            return null;
+          }
+        }
+        var verdict = readCookie("emergent_geo_consent");
+        // Dev-only override, gated to localhost so it can never bypass the consent gate on a production
+        // host, and honoured only when the edge cookie is absent/unreadable. (Inline scripts do not get
+        // import.meta.env.DEV substitution, so this mirrors consent.ts's build gate via the hostname.)
+        var isDevHost = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+        if (isDevHost && verdict !== "0" && verdict !== "1") {
+          try {
+            var devVerdict = localStorage.getItem("emergent_consent_dev_verdict");
+            if (devVerdict === "0" || devVerdict === "1") verdict = devVerdict;
+          } catch (e) {
+            console.warn("[consent-gate]", e);
+          }
+        }
+        // Fail-open: only an explicit "1" means consent is required. The edge stamps "0" or "1" on
+        // every response it serves, so a missing/garbled verdict means no edge verdict was applied —
+        // and with no verdict we neither prompt nor gate. Mirrors consent.ts's isConsentRequired;
+        // consentBootstrap.test.ts fails if the two drift.
+        var consentRequired = verdict === "1";
+
+        // Tolerant reader for the choice cookie/mirror: captures both the binary choice (c) and the
+        // per-category grants (cats). Mirrors getConsentRecord/getConsentCategories in src/lib/consent.
+        var choice = null;
+        var cats = null;
+        function ingestConsent(value) {
+          if (!value) return false;
+          var decoded = value;
+          try {
+            decoded = decodeURIComponent(value);
+          } catch (e) {
+            console.warn("[consent-gate]", e);
+          }
+          if (decoded === "accepted" || decoded === "rejected") {
+            choice = decoded;
+            return true;
+          }
+          try {
+            var parsed = JSON.parse(decoded);
+            if (parsed && (parsed.c === "accepted" || parsed.c === "rejected")) {
+              choice = parsed.c;
+              if (parsed.cats && typeof parsed.cats === "object") cats = parsed.cats;
+              return true;
+            }
+          } catch (e) {
+            console.warn("[consent-gate]", e);
+          }
+          return false;
+        }
+        try {
+          if (!ingestConsent(readCookie("emergent_consent"))) {
+            // localStorage mirror fallback (tolerant reader, same as src/lib/consent).
+            try {
+              ingestConsent(localStorage.getItem("emergent_consent"));
+            } catch (e) {
+              console.warn("[consent-gate]", e);
+            }
+          }
+        } catch (e) {
+          console.warn("[consent-gate]", e);
+        }
+
+        // Per-category enforcement (mirrors isCategoryAllowed): an explicit stored choice OUTRANKS the
+        // geo verdict, so a visitor who saved preferences keeps them in EVERY region (travel / VPN off /
+        // an edge verdict flip to "0" can no longer silently re-enable trackers). `cats` governs when
+        // present; a legacy record without `cats` falls back to its binary choice (accepted -> all on).
+        // Only with NO stored choice at all do we fall back to the verdict: rest-of-world (verdict 0)
+        // allows every category, consent-required fails closed.
+        function categoryAllowed(key) {
+          if (cats) return cats[key] === true;
+          if (choice) return choice === "accepted";
+          return !consentRequired;
+        }
+        var advertisingAllowed = categoryAllowed("advertising");
+        var analyticsAllowed = categoryAllowed("analytics");
+
+        window.__emergentConsentRequired = consentRequired;
+        window.__emergentConsentChoice = choice;
+        var hostAllowed = window.__emergentTrackingAllowed;
+        var wingmanHostAllowed = window.__wingmanTrackingAllowed;
+        // Google tags load only AFTER consent (opt-in) — never anonymously before it. The gate keeps the
+        // existing host allowlist and folds the relevant category grant on top (host gating preserved,
+        // never replaced). The GTM container is advertising (Meta/TikTok/Google Ads) -> gate on
+        // advertising; the Wingman GA4 tag -> gate on analytics. categoryAllowed() already folds in the
+        // verdict fallback, so verdict "0" (ROW) with NO stored choice still grants both exactly as
+        // before — but a ROW visitor who stored a choice now has it honoured here too. The raw host
+        // allowlist is exposed so the in-session accept flow can boot the tag the moment consent is
+        // granted (see consentService.reconcileConsentCategories).
+        window.__emergentHostAllowed = hostAllowed;
+        window.__wingmanHostAllowed = wingmanHostAllowed;
+        window.__emergentGoogleTagsAllowed = hostAllowed && advertisingAllowed;
+        window.__wingmanGoogleTagsAllowed = wingmanHostAllowed && analyticsAllowed;
+        // Per-category script gates: host allowlist AND that category's grant. The NON-Google trackers
+        // (Meta/TikTok/Rewardful on advertising; VWO on analytics) have no Consent Mode and stay fully
+        // blocked until consent — these gates are unchanged by Advanced mode. PartnerStack is NOT among
+        // them: it is essential-category and gates on __emergentHostAllowed only.
+        window.__emergentAdvertisingAllowed = hostAllowed && advertisingAllowed;
+        window.__emergentAnalyticsAllowed = hostAllowed && analyticsAllowed;
+        // Coarse consent+host signal — host AND (advertising OR analytics). Mirrors isTrackingAllowed()
+        // in src/lib/consent; retained for category-agnostic callers and the gtmService dataLayer
+        // funnel. It NO LONGER gates the GTM loader (that is __emergentGoogleTagsAllowed above).
+        window.__emergentTrackingAllowed = hostAllowed && (advertisingAllowed || analyticsAllowed);
+        // Coarse wingman consent+host signal — wingman host AND analytics. Retained for category-
+        // agnostic callers; the Wingman GA4 loader now gates on __wingmanGoogleTagsAllowed above.
+        window.__wingmanTrackingAllowed = wingmanHostAllowed && analyticsAllowed;
+
+        // Google Consent Mode for visitors with a STORED CHOICE. The Google tags now load ONLY after a
+        // category is granted (gate flags above), so there is no pre-consent "anonymous" load to hold:
+        // the old default-denied signal plus ads_data_redaction/url_passthrough are gone. When a grant
+        // exists we set the granted per-category state up front so a RETURNING user's tags (which load at
+        // parse) honor partial grants; a fresh in-session grant is handled by consentService. Keyed on
+        // "has a stored choice" rather than the verdict: a ROW visitor with a PARTIAL stored grant must
+        // get the matching denials too, or the tags their grant does load would treat the denied
+        // categories as granted-by-default. Scoped to allowlisted hosts so non-allowlisted hosts keep
+        // window.dataLayer undefined exactly as today; a ROW visitor with NO stored choice still has no
+        // cats/choice, so this sets nothing and keeps full, un-gated behavior byte-for-byte.
+        if ((cats || choice) && (advertisingAllowed || analyticsAllowed) && (hostAllowed || wingmanHostAllowed)) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            window.dataLayer.push(arguments);
+          }
+          gtag("consent", "default", {
+            ad_storage: advertisingAllowed ? "granted" : "denied",
+            ad_user_data: advertisingAllowed ? "granted" : "denied",
+            ad_personalization: advertisingAllowed ? "granted" : "denied",
+            analytics_storage: analyticsAllowed ? "granted" : "denied",
+          });
+        }
+      })();
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <!-- Prevents PKCE `?code=` leaking to third parties via Referer. -->
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- DNS Prefetch and Preconnect for external services -->
+    <link rel="dns-prefetch" href="https://assets.emergent.sh">
+    <link rel="dns-prefetch" href="https://res.cloudinary.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://assets.emergent.sh" crossorigin="">
+    <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com">
+    <link rel="preconnect" href="https://js.stripe.com">
+    <link rel="preconnect" href="https://analytics.tiktok.com">
+
+    <!-- Primary Meta Tags -->
+    <title>Emergent</title>
+    <meta name="title" content="Emergent - AI-Powered App Development | No Code Required">
+    <meta name="description" content="Transform ideas into production-ready applications with AI. Build web apps, mobile platforms, and custom software through simple conversation, no coding required.">
+    <meta name="keywords" content="no-code development, AI app builder, software development, web app creator, mobile app development, AI coding assistant">
+    <meta name="author" content="Emergent">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://emergent.sh/">
+    <meta property="og:title" content="Emergent - AI-Powered App Development | No Code Required">
+    <meta property="og:description" content="From idea to app in minutes. AI-powered development platform for creators, entrepreneurs, and developers.">
+    <meta property="og:image" content="https://app.emergent.sh/logo.png">
+    <script>
+      (function () {
+        var h = window.location.hostname;
+        var isWingman = h.includes("getwingman.sh") || h.includes("getwingman.com");
+        var m = document.createElement("meta");
+        m.name = "facebook-domain-verification";
+        m.content = isWingman ? "669ilma0h2dlj0a8ou27f0f0gdq2at" : "v1096rpo7sp3nzp96d9ik3cvgwzodd";
+        document.head.appendChild(m);
+      })();
+    </script><meta name="facebook-domain-verification" content="v1096rpo7sp3nzp96d9ik3cvgwzodd">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://emergent.sh/">
+    <meta property="twitter:title" content="Emergent - AI-Powered App Development | No Code Required">
+    <meta property="twitter:description" content="Build real products with Emergent's vibe-coding platform. Emergent AI creates production-ready applications from natural language—no developers required.">
+    <meta property="twitter:image" content="https://app.emergent.sh/twitter-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Preload cloud background only for light-mode users -->
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem("emergent-theme");
+          if (!theme) {
+            var isLoggedIn = Object.keys(localStorage).some(function (k) {
+              return k.startsWith("sb-") && k.endsWith("-auth-token");
+            });
+            theme = isLoggedIn ? "dark" : "system";
+          }
+          var isLight =
+            theme === "light" || (theme === "system" && window.matchMedia("(prefers-color-scheme: light)").matches);
+          if (isLight) {
+            var link = document.createElement("link");
+            link.rel = "preload";
+            link.as = "image";
+            link.type = "image/webp";
+            link.href = "/backgrounds/light_cloud_bg.webp";
+            document.head.appendChild(link);
+          }
+        } catch (e) {}
+      })();
+    </script><link rel="preload" as="image" type="image/webp" href="/backgrounds/light_cloud_bg.webp">
+
+    <!-- Fonts and Styles - Preconnect for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Istok+Web:wght@400&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;display=swap" rel="stylesheet">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://emergent.sh/">
+    <!-- Google Tag Manager (GTM-NCCB99P9) — host allowlist AND advertising consent (see __emergentGoogleTagsAllowed).
+         Withheld entirely until consent, so the container's non-Google tags (Meta/TikTok) can no longer fire
+         before an opt-in. Exposed as an idempotent boot function so an in-session accept boots it without a
+         reload; the guard makes a parse-time load and a grant-time load safe to both run. -->
+    <script>
+      window.__emergentBootGtm = function () {
+        if (window.__emergentGtmBooted) return;
+        window.__emergentGtmBooted = true;
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != "dataLayer" ? "&l=" + l : "";
+          j.async = true;
+          j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-NCCB99P9");
+      };
+      if (window.__emergentGoogleTagsAllowed) window.__emergentBootGtm();
+    </script>
+    <!-- Google tag (gtag.js) — Wingman GA4 (G-Y61DH5D90B). Wingman host allowlist AND analytics consent
+         (see __wingmanGoogleTagsAllowed). Withheld until consent; exposed as an idempotent boot function so
+         an in-session accept boots it without a reload. -->
+    <script>
+      window.__emergentBootWingmanGa = function () {
+        if (window.__wingmanGaBooted) return;
+        window.__wingmanGaBooted = true;
+        var s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.googletagmanager.com/gtag/js?id=G-Y61DH5D90B";
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          window.dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-Y61DH5D90B");
+      };
+      if (window.__wingmanGoogleTagsAllowed) window.__emergentBootWingmanGa();
+    </script>
+    <!-- Conditionally load Rewardful for affiliate users only (advertising category). Idempotent boot
+         function so an in-session advertising accept loads it without a reload (mirrors __emergentBootMetaPixel). -->
+    <script>
+      window.__emergentBootRewardful = function () {
+        if (window.__emergentRewardfulBooted) return;
+        window.__emergentRewardfulBooted = true;
+        // Helper to get cookie by name
+        function getCookieValue(name) {
+          var match = document.cookie.match(new RegExp("(^| )" + name + "=([^;]+)"));
+          return match ? match[2] : null;
+        }
+
+        // Check if user is from affiliate link
+        function isAffiliateUser() {
+          var urlParams = new URLSearchParams(window.location.search);
+          var affiliateParams = ["via", "referral", "ref", "affiliate", "aff", "affid"];
+
+          // Check URL parameters
+          for (var i = 0; i < affiliateParams.length; i++) {
+            if (urlParams.get(affiliateParams[i])) {
+              // console.log('[Rewardful] ✅ Affiliate param found:', affiliateParams[i]);
+              return true;
+            }
+          }
+
+          // Check if rewardful cookie already exists (returning affiliate user)
+          // Use proper cookie parsing to avoid false positives from other cookies containing the string
+          var rewardfulReferral = getCookieValue("rewardful.referral");
+          var rewardfulAffiliate = getCookieValue("rewardful_affiliate");
+          var viaCookie = getCookieValue("via");
+
+          if (rewardfulReferral || rewardfulAffiliate || viaCookie) {
+            // console.log('[Rewardful] ✅ Returning affiliate user (cookie found)');
+            return true;
+          }
+
+          // console.log('[Rewardful] ⛔ Organic user - skipping Rewardful');
+          return false;
+        }
+
+        // Only load Rewardful for affiliate users
+        if (isAffiliateUser()) {
+          // console.log('[Rewardful] 🎯 Loading Rewardful script');
+
+          // Initialize queue
+          (function (w, r) {
+            w._rwq = r;
+            w[r] =
+              w[r] ||
+              function () {
+                (w[r].q = w[r].q || []).push(arguments);
+              };
+          })(window, "rewardful");
+
+          // Load script
+          var script = document.createElement("script");
+          script.src = "https://r.wdfl.co/rw.js";
+          script.async = true;
+          script.setAttribute("data-rewardful", "981168");
+          document.head.appendChild(script);
+        }
+      };
+      if (window.__emergentAdvertisingAllowed) window.__emergentBootRewardful();
+    </script>
+    <!-- Start VWO Async SmartCode -->
+    <script type="text/javascript" id="vwoCode">
+      window._vwo_code ||
+        (function () {
+          if (!window.__emergentAnalyticsAllowed) return;
+          var w = window,
+            d = document;
+          var account_id = 1188541,
+            version = 2.2,
+            settings_tolerance = 800,
+            hide_element = "body",
+            hide_element_style = "opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important",
+            f = 0;
+          /* DO NOT EDIT BELOW THIS LINE */
+          if (
+            ((f = !1),
+            (v = d.querySelector("#vwoCode")),
+            (cc = {}),
+            -1 < d.URL.indexOf("__vwo_disable__") || w._vwo_code)
+          )
+            return;
+          try {
+            var e = JSON.parse(localStorage.getItem("_vwo_" + account_id + "_config"));
+            cc = e && "object" == typeof e ? e : {};
+          } catch (e) {}
+          function r(t) {
+            try {
+              return decodeURIComponent(t);
+            } catch (e) {
+              return t;
+            }
+          }
+          var s = (function () {
+            var e = {
+                combination: [],
+                combinationChoose: [],
+                split: [],
+                exclude: [],
+                uuid: null,
+                consent: null,
+                optOut: null,
+              },
+              t = d.cookie || "";
+            if (!t) return e;
+            for (
+              var n,
+                i,
+                o =
+                  /(?:^|;\s*)(?:(_vis_opt_exp_(\d+)_combi=([^;]*))|(_vis_opt_exp_(\d+)_combi_choose=([^;]*))|(_vis_opt_exp_(\d+)_split=([^:;]*))|(_vis_opt_exp_(\d+)_exclude=[^;]*)|(_vis_opt_out=([^;]*))|(_vwo_global_opt_out=[^;]*)|(_vwo_uuid=([^;]*))|(_vwo_consent=([^;]*)))/g;
+              null !== (n = o.exec(t));
+            )
+              try {
+                n[1]
+                  ? e.combination.push({ id: n[2], value: r(n[3]) })
+                  : n[4]
+                    ? e.combinationChoose.push({ id: n[5], value: r(n[6]) })
+                    : n[7]
+                      ? e.split.push({ id: n[8], value: r(n[9]) })
+                      : n[10]
+                        ? e.exclude.push({ id: n[11] })
+                        : n[12]
+                          ? (e.optOut = r(n[13]))
+                          : n[14]
+                            ? (e.optOut = !0)
+                            : n[15]
+                              ? (e.uuid = r(n[16]))
+                              : n[17] && ((i = r(n[18])), (e.consent = i && 3 <= i.length ? i.substring(0, 3) : null));
+              } catch (e) {}
+            return e;
+          })();
+          function i() {
+            var e = (function () {
+                if (w.VWO && Array.isArray(w.VWO))
+                  for (var e = 0; e < w.VWO.length; e++) {
+                    var t = w.VWO[e];
+                    if (Array.isArray(t) && ("setVisitorId" === t[0] || "setSessionId" === t[0])) return !0;
+                  }
+                return !1;
+              })(),
+              t =
+                "a=" +
+                account_id +
+                "&u=" +
+                encodeURIComponent(w._vis_opt_url || d.URL) +
+                "&vn=" +
+                version +
+                "&ph=1" +
+                ("undefined" != typeof platform ? "&p=" + platform : "") +
+                "&st=" +
+                w.performance.now();
+            (e ||
+              ((n = (function () {
+                var e,
+                  t = [],
+                  n = {},
+                  i = (w.VWO && w.VWO.appliedCampaigns) || {};
+                for (e in i) {
+                  var o = i[e] && i[e].v;
+                  o && (t.push(e + "-" + o + "-1"), (n[e] = !0));
+                }
+                if (s && s.combination)
+                  for (var r = 0; r < s.combination.length; r++) {
+                    var a = s.combination[r];
+                    n[a.id] || t.push(a.id + "-" + a.value);
+                  }
+                return t.join("|");
+              })()) && (t += "&c=" + n),
+              (n = (function () {
+                var e = [],
+                  t = {};
+                if (s && s.combinationChoose)
+                  for (var n = 0; n < s.combinationChoose.length; n++) {
+                    var i = s.combinationChoose[n];
+                    (e.push(i.id + "-" + i.value), (t[i.id] = !0));
+                  }
+                if (s && s.split)
+                  for (var o = 0; o < s.split.length; o++) t[(i = s.split[o]).id] || e.push(i.id + "-" + i.value);
+                return e.join("|");
+              })()) && (t += "&cc=" + n),
+              (n = (function () {
+                var e = {},
+                  t = [];
+                if (w.VWO && Array.isArray(w.VWO))
+                  for (var n = 0; n < w.VWO.length; n++) {
+                    var i = w.VWO[n];
+                    if (Array.isArray(i) && "setVariation" === i[0] && i[1] && Array.isArray(i[1]))
+                      for (var o = 0; o < i[1].length; o++) {
+                        var r,
+                          a = i[1][o];
+                        a && "object" == typeof a && ((r = a.e), (a = a.v), r && a && (e[r] = a));
+                      }
+                  }
+                for (r in e) t.push(r + "-" + e[r]);
+                return t.join("|");
+              })()) && (t += "&sv=" + n)),
+              s && s.optOut && (t += "&o=" + s.optOut));
+            var n = (function () {
+              var e = [],
+                t = {};
+              if (s && s.exclude)
+                for (var n = 0; n < s.exclude.length; n++) {
+                  var i = s.exclude[n];
+                  t[i.id] || (e.push(i.id), (t[i.id] = !0));
+                }
+              return e.join("|");
+            })();
+            return (
+              n && (t += "&e=" + n),
+              s && s.uuid && (t += "&id=" + s.uuid),
+              s && s.consent && (t += "&consent=" + s.consent),
+              w.name && -1 < w.name.indexOf("_vis_preview") && (t += "&pM=true"),
+              w.VWO && w.VWO.ed && (t += "&ed=" + w.VWO.ed),
+              t
+            );
+          }
+          code = {
+            nonce: v && v.nonce,
+            library_tolerance: function () {
+              return "undefined" != typeof library_tolerance ? library_tolerance : void 0;
+            },
+            settings_tolerance: function () {
+              return cc.sT || settings_tolerance;
+            },
+            hide_element_style: function () {
+              return "{" + (cc.hES || hide_element_style) + "}";
+            },
+            hide_element: function () {
+              return performance.getEntriesByName("first-contentful-paint")[0]
+                ? ""
+                : "string" == typeof cc.hE
+                  ? cc.hE
+                  : hide_element;
+            },
+            getVersion: function () {
+              return version;
+            },
+            finish: function (e) {
+              var t;
+              f ||
+                ((f = !0),
+                (t = d.getElementById("_vis_opt_path_hides")) && t.parentNode.removeChild(t),
+                e && (new Image().src = "https://dev.visualwebsiteoptimizer.com/ee.gif?a=" + account_id + e));
+            },
+            finished: function () {
+              return f;
+            },
+            addScript: function (e) {
+              var t = d.createElement("script");
+              ((t.type = "text/javascript"),
+                e.src ? (t.src = e.src) : (t.text = e.text),
+                v && t.setAttribute("nonce", v.nonce),
+                d.getElementsByTagName("head")[0].appendChild(t));
+            },
+            load: function (e, t) {
+              t = t || {};
+              var n = new XMLHttpRequest();
+              (n.open("GET", e, !0),
+                (n.withCredentials = !t.dSC),
+                (n.responseType = t.responseType || "text"),
+                (n.onload = function () {
+                  if (t.onloadCb) return t.onloadCb(n, e);
+                  200 === n.status
+                    ? _vwo_code.addScript({ text: n.responseText })
+                    : _vwo_code.finish("&e=loading_failure:" + e);
+                }),
+                (n.onerror = function () {
+                  if (t.onerrorCb) return t.onerrorCb(e);
+                  _vwo_code.finish("&e=loading_failure:" + e);
+                }),
+                n.send());
+            },
+            init: function () {
+              var e,
+                t = this.settings_tolerance();
+              ((w._vwo_settings_timer = setTimeout(function () {
+                _vwo_code.finish();
+              }, t)),
+                "body" !== this.hide_element()
+                  ? ((n = d.createElement("style")),
+                    (e = (t = this.hide_element()) ? t + this.hide_element_style() : ""),
+                    (t = d.getElementsByTagName("head")[0]),
+                    n.setAttribute("id", "_vis_opt_path_hides"),
+                    v && n.setAttribute("nonce", v.nonce),
+                    n.setAttribute("type", "text/css"),
+                    n.styleSheet ? (n.styleSheet.cssText = e) : n.appendChild(d.createTextNode(e)),
+                    t.appendChild(n))
+                  : ((n = d.getElementsByTagName("head")[0]),
+                    ((e = d.createElement("div")).style.cssText =
+                      "z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;"),
+                    e.setAttribute("id", "_vis_opt_path_hides"),
+                    e.classList.add("_vis_hide_layer"),
+                    n.parentNode.insertBefore(e, n.nextSibling)));
+              var n = "https://dev.visualwebsiteoptimizer.com/j.php?" + i();
+              -1 !== w.location.search.indexOf("_vwo_xhr")
+                ? this.addScript({ src: n })
+                : this.load(n + "&x=true", { l: 1 });
+            },
+          };
+          w._vwo_code = code;
+          code.init();
+        })();
+    </script>
+    <!-- End VWO Async SmartCode -->
+    <!-- Add Google Identity Services script -->
+    <script src="https://accounts.google.com/gsi/client" async=""></script>
+    <!-- Paddle.js for checkout overlay (initialized in paddleService.ts with env token) -->
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js" defer=""></script>
+    <!-- Meta Pixel Code — advertising category. Withheld until consent; exposed as an idempotent boot
+         function so an in-session advertising accept boots it without a reload (mirrors __emergentBootGtm).
+         The __emergentMetaPixelBooted guard makes a parse-time load and a grant-time load safe to both run. -->
+    <script>
+      window.__emergentBootMetaPixel = function () {
+        if (window.__emergentMetaPixelBooted) return;
+        window.__emergentMetaPixelBooted = true;
+        !(function (f, b, e, v, n, t, s) {
+          if (f.fbq) return;
+          n = f.fbq = function () {
+            n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+          };
+          if (!f._fbq) f._fbq = n;
+          n.push = n;
+          n.loaded = !0;
+          n.version = "2.0";
+          n.queue = [];
+          t = b.createElement(e);
+          t.async = !0;
+          t.src = v;
+          s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s);
+        })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+        fbq("init", "1326372205570201");
+        fbq("track", "PageView");
+      };
+      if (window.__emergentAdvertisingAllowed) window.__emergentBootMetaPixel();
+    </script>
+    <!-- End Meta Pixel Code -->
+    <!-- TikTok Pixel Code — advertising category. Withheld until consent; exposed as an idempotent boot
+         function so an in-session advertising accept boots it without a reload (mirrors __emergentBootGtm). -->
+    <script>
+      window.__emergentBootTikTokPixel = function () {
+        if (window.__emergentTikTokPixelBooted) return;
+        window.__emergentTikTokPixelBooted = true;
+        (function (w, d, t) {
+          w.TiktokAnalyticsObject = t;
+          var ttq = (w[t] = w[t] || []);
+          ttq.methods = [
+            "page",
+            "track",
+            "identify",
+            "instances",
+            "debug",
+            "on",
+            "off",
+            "once",
+            "ready",
+            "alias",
+            "group",
+            "enableCookie",
+            "disableCookie",
+            "holdConsent",
+            "revokeConsent",
+            "grantConsent",
+          ];
+          ttq.setAndDefer = function (queue, method) {
+            queue[method] = function () {
+              queue.push([method].concat(Array.prototype.slice.call(arguments, 0)));
+            };
+          };
+          for (var i = 0; i < ttq.methods.length; i++) {
+            ttq.setAndDefer(ttq, ttq.methods[i]);
+          }
+          ttq.instance = function (pixelId) {
+            ttq._i = ttq._i || {};
+            var instance = ttq._i[pixelId] || [];
+            for (var j = 0; j < ttq.methods.length; j++) {
+              ttq.setAndDefer(instance, ttq.methods[j]);
+            }
+            return instance;
+          };
+          ttq.load = function (pixelId, options) {
+            var source = "https://analytics.tiktok.com/i18n/pixel/events.js";
+            ttq._i = ttq._i || {};
+            ttq._i[pixelId] = [];
+            ttq._i[pixelId]._u = source;
+            ttq._t = ttq._t || {};
+            ttq._t[pixelId] = +new Date();
+            ttq._o = ttq._o || {};
+            ttq._o[pixelId] = options || {};
+            var script = d.createElement("script");
+            script.type = "text/javascript";
+            script.async = true;
+            script.src = source + "?sdkid=" + pixelId + "&lib=" + t;
+            var firstScript = d.getElementsByTagName("script")[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+          };
+
+          var configuredPixelId = "D8LPE6JC77UDGOQM9GI0";
+          if (!configuredPixelId || configuredPixelId.indexOf("%") === 0) {
+            console.warn("[tiktokPixel] VITE_TIKTOK_PIXEL_ID is not configured");
+            return;
+          }
+          ttq.load(configuredPixelId);
+          ttq.page();
+        })(window, document, "ttq");
+      };
+      if (window.__emergentAdvertisingAllowed) window.__emergentBootTikTokPixel();
+    </script>
+    <!-- End TikTok Pixel Code -->
+    <!-- Conditionally load PartnerStack for partner users only. ESSENTIAL category (partner referral
+         attribution is what makes a partner's own referral link work), so this boots on the host
+         allowlist alone and is NOT gated on the advertising grant. Still host-gated, to keep the
+         third-party script off preview/CDN hosts. Idempotent boot function retained so the loader
+         stays safe to call more than once. -->
+    <script>
+      window.__emergentBootPartnerStack = function () {
+        if (window.__emergentPartnerStackBooted) return;
+        // Helper to get cookie by name (reuse pattern from Rewardful)
+        function getCookieValue(name) {
+          var match = document.cookie.match(new RegExp("(^| )" + name + "=([^;]+)"));
+          return match ? match[2] : null;
+        }
+
+        // Check if user is from partner link
+        function isPartnerUser() {
+          var urlParams = new URLSearchParams(window.location.search);
+
+          if (urlParams.get("ps_partner_key")) {
+            return true;
+          }
+          // Check if ps_partner_key cookie exists (returning partner user)
+          if (getCookieValue("ps_partner_key")) {
+            return true;
+          }
+          return false;
+        }
+
+        // Only load PartnerStack for partner users. The one-shot latch is set HERE, not at the top of
+        // the function: a non-partner visitor must not burn the latch, or a partner key arriving later
+        // in the same page session could never boot the script. (Previously the advertising grant was
+        // a second chance to call this; now that it boots at parse on the host gate alone, that second
+        // chance is gone, so the latch must only fire when the script is actually injected.)
+        if (isPartnerUser()) {
+          window.__emergentPartnerStackBooted = true;
+          var gs = document.createElement("script");
+          gs.src = "https://js.partnerstack.com/v1/";
+          gs.type = "text/javascript";
+          gs.async = true;
+          gs.onload = gs.onreadystatechange = function () {
+            var rs = this.readyState;
+            if (rs && rs != "complete" && rs != "loaded") return;
+            try {
+              growsumo._initialize("pk_X807fuc0nfNQX8tFKDm3PatW0ZZNyDUd", [
+                "emergentlabsinc.partnerlinks.io",
+                "get.emergent.sh",
+                "trialcoig7l2s8gsenk14emergent.partnerlinks.io",
+              ]);
+              if (typeof growsumoInit === "function") {
+                growsumoInit();
+              }
+            } catch (e) {}
+          };
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(gs, s);
+        }
+      };
+      if (window.__emergentHostAllowed) window.__emergentBootPartnerStack();
+    </script>
+    <!-- End PartnerStack -->
+    <script type="module" crossorigin="" src="/main-d0V7oga9.js"></script>
+    <link rel="modulepreload" crossorigin="" href="/chunks/chunk-DEp0bMW7.js">
+    <link rel="modulepreload" crossorigin="" href="/chunks/chunk-BHQ7Cwgb.js">
+    <link rel="modulepreload" crossorigin="" href="/chunks/chunk-BOk5X2p9.js">
+    <link rel="modulepreload" crossorigin="" href="/chunks/chunk-C5RXLB9t.js">
+    <link rel="modulepreload" crossorigin="" href="/chunks/chunk-gM07DALF.js">
+    <link rel="modulepreload" crossorigin="" href="/chunks/chunk-Lq240vWF.js">
+    <link rel="modulepreload" crossorigin="" href="/chunks/index.mjs-Dd_qQ-gt.js">
+    <link rel="modulepreload" crossorigin="" href="/chunks/chunk-B2i_lZML.js">
+    <link rel="modulepreload" crossorigin="" href="/chunks/chunk-DZds5NTV.js">
+    <link rel="modulepreload" crossorigin="" href="/chunks/index.mjs-W1qlS1ZF.js">
+    <link rel="stylesheet" crossorigin="" href="/assets/monaco-editor-BetWCQm5.css">
+    <link rel="stylesheet" crossorigin="" href="/assets/main-CSDeZqpU.css">
+    <meta name="emergent-build-commit" content="dev">
+    <meta name="emergent-build-time" content="2026-08-26T13:52:09.077Z">
+  <script type="text/javascript" nonce="">(function(){function _vwo_err(e) {
+    var errQuery = new URLSearchParams({
+      a: "1188541",
+      s: "j.php",
+      _cu: window.location.href,
+      e: (e && e.message ? e.message.substring(0, 1000) : "")
+    }).toString();
+    if (e && e.code) errQuery += "&code=" + encodeURIComponent(e.code);
+    if (e && e.type) errQuery += "&type=" + encodeURIComponent(e.type);
+    window.VWO.collect(`ee.gif?${errQuery}`, { path: 1 });
+    if (e.cause === "archivedDomain") throw e;
+  };try{var extE=0;window.VWO=window.VWO||[];window.VWO._=window.VWO._||{};window.VWO._.sE=window.VWO._.sE||function(fn){return function(){try{return fn.apply(this,arguments)}catch(err){console.error('safeExecute failed:',err)}}};/*! @fileName: tracking-endpoints.js */window.VWO._.sE(void(()=>{function n(n,i={}){if(!n)return;const w=(window.VWO._.domains||{}).cl,o=i.path?`${w}${String(n).replace(/^\/+/,"")}`:n;if(window.VWO._.enFetch)return void fetch(o,{method:"GET",keepalive:!0}).catch(()=>{});const e=new Image;e.onload=()=>{},e.onerror=()=>{},e.src=o}const i="edge.wingify.net",w="https://";window.VWO._.domains=window.VWO._.domains||{},window.VWO._.sD=n=>{const{base:o,coll:e,serve:t,dl:d=""}=n,r=document.currentScript,c=o||(null==r?void 0:r.src);window.VWO.nonce=(null==r?void 0:r.nonce)||"";const s=(()=>{if(!c)return"";try{const n=new URL(c);return o?`${n.hostname}${n.pathname.replace(/\/+$/,"")}`:n.hostname}catch(n){return""}})(),$=new URL(c).hostname===i,a=t||($?i:s),f=e||($?"collect.wingify.net":a),g=window.VWO._.domains,l=`${w}${a}`;g.sv=`${l}/`,g.serverUrl=`${l}`,g.cl=`${w}${f}/${d?d+"/":""}`,g.dl=d,g.collect=`${w}${f}/`},window.VWO.load_co=(i,w={})=>{const{path:o,defer:e,fetchPriority:t,onError:d}=w,r=(window.VWO._.domains||{}).sv,c=o?`${r}${String(i).replace(/^\/+/,"")}`:i;if(!c)return;const s=document.createElement("script");window.VWO.nonce&&(s.nonce=window.VWO.nonce),s.src=c,s.type="text/javascript",e&&(s.defer=!0),s.fetchPriority=t||"high",s.onload=()=>{},s.onerror=()=>{window.VWO._.gcpfb&&window.VWO._.gcpfb(c,window.VWO.load_co)||(d&&d(),window._vwo_err?window._vwo_err({message:`Failed to load ${c}`}):n(`e.gif?${new URLSearchParams({a:String(window._vwo_acc_id||0),s:`${window._vwo_acc_id||0}.js`,_cu:window.location.href,e:`Failed to load ${c}`}).toString()}`,{path:1}))},document.head.appendChild(s)},window.VWO.collect=n,window.VWO._.trkPaths={sn:"s.gif",vS:"l.gif",mt:"c.gif",hm:"h.gif",err:"ee.gif"}})());
+;window.VWO._.sD({base:'https://dev.visualwebsiteoptimizer.com'});;(function(){window._VWO=window._VWO||{};var aC=window._vwo_code;if(typeof aC==='undefined'){window._vwo_mt='dupCode';return;}if(window._VWO.sCL){window._vwo_mt='dupCode';window._VWO.sCDD=true;try{if(aC){clearTimeout(window._vwo_settings_timer);var h=document.querySelectorAll('#_vis_opt_path_hides');var x=h[h.length>1?1:0];x&&x.remove();}}catch(e){}return;}window._VWO.sCL=true;;window._vwo_mt="live";var localPreviewObject={};var previewKey="_vis_preview"+"_"+1188541;var wL=window.location;;try{localPreviewObject[previewKey]=window.localStorage.getItem(previewKey);JSON.parse(localPreviewObject[previewKey])}catch(e){localPreviewObject[previewKey]=""}try{window._vwo_tm="";var getMode=function(e){var n;if(window.name.indexOf(e)>-1){n=window.name}else{n=wL.search.match("(?:_vwo_m|_wingify_m)=([^&]*)");n=n&&atob(decodeURIComponent(n[1]))}try{return n&&JSON.parse(n)}catch(err){return null}};var ccMode=getMode("_vwo_cc");if(window.name.indexOf("_vis_heatmap")>-1||window.name.indexOf("_vis_editor")>-1||ccMode||window.name.indexOf("_vis_preview")>-1||window.name.indexOf("_wingify_preview")>-1){try{if(ccMode){window._vwo_mt=decodeURIComponent(wL.search.match("(?:_vwo_m|_wingify_m)=([^&]*)")[1])}else if(window.name&&JSON.parse(window.name)){window._vwo_mt=window.name}}catch(e){if(window._vwo_tm)window._vwo_mt=window._vwo_tm;if(window._vwo_acc_id===1188541&&localPreviewObject[previewKey]){window._vwo_mt=JSON.stringify(localPreviewObject)}}}else if(window._vwo_tm.length){window._vwo_mt=window._vwo_tm}else if(location.href.indexOf("_vis_opt_preview_combination")!==-1&&location.href.indexOf("_vis_test_id")!==-1){window._vwo_mt="sharedPreview"}else if(localPreviewObject[previewKey]){window._vwo_mt=JSON.stringify(localPreviewObject)}else if(location.href.indexOf("wingify_qa_assistant=true")!==-1){window._vwo_mt=JSON.stringify({[previewKey]:"wingify_qaa"});const url=new URL(window.location.href);url.searchParams.delete("wingify_qa_assistant");window.history.replaceState({},"",url)}if(window._vwo_mt!=="live"){;if(typeof extE!=="undefined"){extE=1}if (!getMode("_vwo_cc")) {
+        // This Preview Code is supposed to execute Async Smart Code that further takes care of heatmap/preview/editor
+        (function(){var cParam='';try{if(window.VWO&&window.VWO.appliedCampaigns){var campaigns=window.VWO.appliedCampaigns;for(var cId in campaigns){if(campaigns.hasOwnProperty(cId)){var v=campaigns[cId].v;if(cId&&v){cParam='&c='+cId+'-'+v+'-1';break;}}}}}catch(e){};window._vwo_prevMode=false;_vwo_code.load(window.VWO._.domains.sv + 'j.php?mode='+encodeURIComponent(window._vwo_mt)+'&a=1188541&f=1&u='+encodeURIComponent(window._vis_opt_url||document.URL)+'&eventArch=true'+'&x=true'+cParam,{sL:window._vwo_code.sL});if(window._vwo_code.sL){window._vwo_prevMode=true;}})();;
+      } else {
+        (function () {
+          window._vwo_code && window._vwo_code.finish();;
+          _vwo_ccc = { u: window.VWO._.domains.sv + 'j.php?a=1188541&u=https%3A%2F%2Fapp.emergent.sh%2Floading-preview%3Fhost%3Dcraftsman-bulgaria.preview.emergentagent.com&vn=2.2&ph=1&st=652&x=true' };
+          // var app = getMode("_vwo_cc")._vwo_cc.app || "app";
+          var s = document.createElement("script");
+          s.src = "https://dev.visualwebsiteoptimizer.com/cdn/edrv/beta/checker-d6466a772fa38d63031d87bb570ad916.js";
+          document.head.appendChild(s);
+        })();
+      }}}catch(e){var vwo_e=new Image;vwo_e.src="https://dev.visualwebsiteoptimizer.com/ee.gif?s=mode_det&e="+encodeURIComponent(e&&e.stack&&e.stack.substring(0,1e3)+"&vn=");aC&&_vwo_code.finish();}})();
+;window._vwo_cookieDomain="emergent.sh";if(window._vwo_mt === "live"){window.VWO=window.VWO||[];window._vwo_acc_id=1188541;window.VWO._=window.VWO._||{};;const shouldSampleApm=false;if(shouldSampleApm){setTimeout((function(){VWO.load_co(window.VWO._.domains.sv+"cdn/apmLib-.br.js")}),0)}VWO._=VWO._||{};var visMeta=VWO._.visMeta;VWO._.allSettings=function(){return{dataStore:{events:{"event-ask-human":{},"event-finish-tool":{},"user-ltv":{}}}}}();window.VWO.visUuid="D622B54763F4B1A3E550B4B7CB042EF76|e9c7754cbd3cfb48fe56a20ddca87ab6";
+;_vwo_code.sT=_vwo_code.finished();(function(c,a,e,d,b,z,g,sT){if(window.VWO._&&window.VWO._.isBot)return;const cookiePrefix=window._vwoCc&&window._vwoCc.cookiePrefix||"";const useLocalStorage=sT==="ls";const cookieName=cookiePrefix+"_vwo_uuid_v2";const escapedCookieName=cookieName.replace(/([.*+?^${}()|[\]\\])/g,"\\$1");const cookieDomain=g;function getValue(){if(useLocalStorage){return localStorage.getItem(cookieName)}else{const regex=new RegExp("(^|;\\s*)"+escapedCookieName+"=([^;]*)");const match=e.cookie.match(regex);return match?decodeURIComponent(match[2]):null}}function setValue(value,days){if(useLocalStorage){localStorage.setItem(cookieName,value)}else{e.cookie=cookieName+"="+value+"; expires="+new Date(864e5*days+ +new Date).toGMTString()+"; domain="+cookieDomain+"; path=/"}}let existingValue=null;if(sT){const cookieRegex=new RegExp("(^|;\\s*)"+escapedCookieName+"=([^;]*)");const cookieMatch=e.cookie.match(cookieRegex);const cookieValue=cookieMatch?decodeURIComponent(cookieMatch[2]):null;const lsValue=localStorage.getItem(cookieName);if(useLocalStorage){if(lsValue){existingValue=lsValue;if(cookieValue){e.cookie=cookieName+"=; expires=Thu, 01 Jan 1970 00:00:01 GMT; domain="+cookieDomain+"; path=/"}}else if(cookieValue){localStorage.setItem(cookieName,cookieValue);e.cookie=cookieName+"=; expires=Thu, 01 Jan 1970 00:00:01 GMT; domain="+cookieDomain+"; path=/";existingValue=cookieValue}}else{if(cookieValue){existingValue=cookieValue;if(lsValue){localStorage.removeItem(cookieName)}}else if(lsValue){e.cookie=cookieName+"="+lsValue+"; expires="+new Date(864e5*366+ +new Date).toGMTString()+"; domain="+cookieDomain+"; path=/";localStorage.removeItem(cookieName);existingValue=lsValue}}a=existingValue||a}else{const regex=new RegExp("(^|;\\s*)"+escapedCookieName+"=([^;]*)");const match=e.cookie.match(regex);a=match?decodeURIComponent(match[2]):a}if(-1==e.cookie.indexOf("_vis_opt_out")&&-1==d.location.href.indexOf("vwo_opt_out=1")){window.VWO.visUuid=a;a=a.split("|");var vQuery="cd="+(window._vis_opt_cookieDays||0)+"&a=1188541&d="+encodeURIComponent(d.location.hostname.replace(/^www\./,"") || c)+"&u="+a[0]+"&h="+a[1]+"&t="+z;;window.VWO.collect("collect/v.gif?"+vQuery,{path:1,pushToIeQueue:1});setValue(a.join("|"),366)}})("emergent.sh",window.VWO.visUuid,document,window,0,_vwo_code.sT,"emergent.sh","false"||null);
+;;window.VWO=window.VWO||[];(function(){function l(e){return e.replace(/[^\w\s-.][\w]/g,(function(e){return e.toUpperCase()})).replace(/[^\w\s-.]/g,"").replace(/ [\w]/g,(function(e){return e.toUpperCase()})).replace(/ /g,"")}function i(e,t){if("object"!=typeof t||Array.isArray(t))return u("Invalid attribute type: attribute can only be an object!");var n,r,a,o={};for(n in t)if(Object.prototype.hasOwnProperty.call(t,n)){var i="props"===(i=(i=l((i=n).slice(i.search(/[\w-.]/g)))).replace(/^(_|vwo_|\.|v_|i_|-)*/g,""))?"":i;if(!i.trim())return u("Invalid attribute name: "+n+" is not allowed as an attribute name!");40<i.length&&(i=i.slice(0,40),console.warn("Attribute name should not be greater than 40 characters!"));var c=s(t[n])||(c=t[n],"[object Array]"===toString.call(c))?JSON.stringify(t[n]):t[n];v(e)||(a=100,c=(r=c).length>a?r.slice(0,a-1)+"...":r),o[i]=c}return o}function s(e){return"[object Object]"===toString.call(e)}function u(e){console.log("%cVWO Event API Error:","font-weight:bold;",e),_vwo_err({message:e})}function c(e=-1,t=""){switch(e){case 0:return u("Event name cannot be empty!");case 1:return console.warn("Event name should not be greater than 40 characters!");case 2:return u("Invalid event name: "+t+" is not allowed as an event name!");default:return u("Invalid event name: event name can only be a string!")}}function r(e,t,n){var e=((e,t)=>{var n;return"string"!=typeof e?c():(e=e.trim())?(e=(e=>("visitors"===(e=(e=l(e.slice(e.search(/[\w-.]/g)))).replace(/^(_|vwo_|\.|v_|i_|-)*/g,"")).toLowerCase()&&(e+="_1"),e))(n=e))?(40<e.length&&(c(1),e=e.slice(0,40)),(n=i(e,t))?{eventName:e,filteredAttributeObject:n}:void 0):c(2,n):c(0)})(e,t=t||{}),r={ogName:1,source:1};if(!e)return{filteredData:void 0,cb:null};t=null;if(s(n)){"function"==typeof n.cb&&(t=n.cb),delete n.cb;var a,o={};for(a in n)r[a]&&(o[a]=n[a]);0<Object.keys(o).length&&(e.filteredAttributeObject.vwoMeta=o)}return{filteredData:e,cb:t}}function v(e){return window.VWO._&&VWO._.allSettings&&VWO._.allSettings.dataStore&&VWO._.allSettings.dataStore.events&&VWO._.allSettings.dataStore.events[e]}VWO.event=function(e,t,n){var{filteredData:e,cb:n}=r(e,t,n);if(e&&(e=>{if(!window._vis_debug&&!v(e)){var t;try{t=JSON.parse(window.localStorage.getItem("vwoUnRegEvents"))||{}}catch(e){t={}}if(t[e])return!1;t[e]=!0;e=JSON.stringify(t);window.localStorage.setItem("vwoUnRegEvents",e)}return!0})(e.eventName))return window._vis_debug?void 0:((t={d:{event:{}}}).d.event.props=e.filteredAttributeObject||{},t.d.event.props.page={title:document.title,url:window._vis_opt_url||window.location.href,referrerUrl:document.referrer},t.d.event.name=e.eventName,t.d.event.time=Date.now(),e="https://dev.visualwebsiteoptimizer.com/events/"+(v(e.eventName)?"t":"t/u")+"?en="+e.eventName+"&a="+1188541+"&_cu="+encodeURIComponent(document.URL),navigator.sendBeacon(e,JSON.stringify(t)),void("function"==typeof n&&n()))}})();
+;for(var e=0;e<window.VWO.length;e++){exC(window.VWO[e])}window.VWO.push=function(){exC(arguments[0])};function exC(a){if(!Array.isArray(a))return;switch(a[0]){case"onVWOLoaded":var p=[];p[0]={};p[1]=[];return a[1].call(this,p);case"onVWOCampaignsLoaded":return a[1].call(this,{bucketed_campaigns:[]});case"event":return VWO.event(a[1],a[2],a[3])}}
+;_vwo_code.finish();}}catch(e){_vwo_code.finish();;_vwo_err(e);window.VWO.caE=1}})();
+</script><style id="googleidentityservice_button_styles">.qJTHM{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;color:#202124;direction:ltr;-webkit-touch-callout:none;font-family:Roboto-Regular,arial,sans-serif;-webkit-font-smoothing:antialiased;font-weight:400;margin:0;overflow:hidden;-webkit-text-size-adjust:100%}.ynRLnc{left:-9999px;position:absolute;top:-9999px}.L6cTce{display:none}.bltWBb{overflow-wrap:break-word;word-break:break-word}.hSRGPd{color:#1a73e8;cursor:pointer;font-weight:500;text-decoration:none}.Bz112c-W3lGp{height:16px;width:16px}.Bz112c-E3DyYd{height:20px;width:20px}.Bz112c-r9oPif{height:24px;width:24px}.Bz112c-u2z5K{height:36px;width:36px}.Bz112c-uaxL4e{border-radius:10px}.LgbsSe-Bz112c{display:block}.S9gUrf-YoZ4jf{border:none;margin:0;padding:0}.S9gUrf-YoZ4jf *{border:none;margin:0;padding:0}.fFW7wc-ibnC6b>.aZ2wEe>div{border-color:#4285f4}.P1ekSe-ZMv3u{-webkit-transition:height .2s linear;transition:height .2s linear}.P1ekSe-ZMv3u>div:first-child{background-color:#1a73e8!important;-webkit-transition:width .3s linear;transition:width .3s linear}.P1ekSe-ZMv3u>div:nth-child(2){background-image:-webkit-gradient(linear,left top,right top,from(rgba(255,255,255,.7)),to(rgba(255,255,255,.7))),-webkit-gradient(linear,left top,right top,from(#1a73e8),to(#1a73e8))!important;background-image:-webkit-linear-gradient(left,rgba(255,255,255,.7),rgba(255,255,255,.7)),-webkit-linear-gradient(left,#1a73e8,#1a73e8)!important;background-image:linear-gradient(90deg,rgba(255,255,255,.7),rgba(255,255,255,.7)),linear-gradient(90deg,#1a73e8,#1a73e8)!important}.P1ekSe-ZMv3u>div:nth-child(3){background-image:-webkit-gradient(linear,left top,right top,from(rgba(255,255,255,.7)),to(rgba(255,255,255,.7))),-webkit-gradient(linear,left top,right top,from(#1a73e8),to(#1a73e8))!important;background-image:-webkit-linear-gradient(left,rgba(255,255,255,.7),rgba(255,255,255,.7)),-webkit-linear-gradient(left,#1a73e8,#1a73e8)!important;background-image:linear-gradient(90deg,rgba(255,255,255,.7),rgba(255,255,255,.7)),linear-gradient(90deg,#1a73e8,#1a73e8)!important}.haAclf{display:inline-block}.nsm7Bb-HzV7m-LgbsSe{border-radius:4px;box-sizing:border-box;-webkit-transition:background-color .218s,border-color .218s;transition:background-color .218s,border-color .218s;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;-webkit-appearance:none;background-color:#fff;background-image:none;border:1px solid #dadce0;color:#3c4043;cursor:pointer;font-family:Google Sans,arial,sans-serif;font-size:.875rem;height:40px;letter-spacing:.25px;outline:none;overflow:hidden;padding:0 12px;position:relative;text-align:center;vertical-align:middle;white-space:nowrap;width:auto}@media screen and (-ms-high-contrast:active){.nsm7Bb-HzV7m-LgbsSe{border:2px solid windowText;color:windowText}}@media screen and (preferes-contrast:more){.nsm7Bb-HzV7m-LgbsSe{color:#000}}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe{font-size:.875rem;height:32px;letter-spacing:.25px;padding:0 10px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe{font-size:.6875rem;height:20px;letter-spacing:.3px;padding:0 8px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe{padding:0;width:40px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe{width:32px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe{width:20px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK{border-radius:20px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.pSzOP-SxQuSe{border-radius:16px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.purZT-SxQuSe{border-radius:10px}.nsm7Bb-HzV7m-LgbsSe.i5vt6e-to915-Ia7Qfc{border:1px solid #8e918f;background-color:#131314;color:#e3e3e3}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc{border:none;color:#fff}.nsm7Bb-HzV7m-LgbsSe.MFS4be-v3pZbf-Ia7Qfc{background-color:#1a73e8}.nsm7Bb-HzV7m-LgbsSe.MFS4be-JaPV2b-Ia7Qfc{background-color:#202124;color:#e8eaed}@media screen and (prefers-contrast:more){.nsm7Bb-HzV7m-LgbsSe.MFS4be-JaPV2b-Ia7Qfc{color:#fff}}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:18px;margin-right:8px;min-width:18px;width:18px}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:14px;min-width:14px;width:14px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:10px;min-width:10px;width:10px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin-left:8px;margin-right:-4px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin:0;padding:10px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{padding:8px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{padding:4px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{border-top-left-radius:3px;border-bottom-left-radius:3px;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;align-items:center;background-color:#fff;height:36px;margin-left:-10px;margin-right:12px;min-width:36px;width:36px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c,.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin:0;padding:0}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{height:28px;margin-left:-8px;margin-right:10px;min-width:28px;width:28px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{height:16px;margin-left:-6px;margin-right:8px;min-width:16px;width:16px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{border-radius:3px;margin-left:2px;margin-right:0;padding:0}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{border-radius:18px}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{border-radius:14px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{border-radius:8px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-bN97Pc-sM5MNb{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;-webkit-box-align:center;align-items:center;-webkit-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-flex-wrap:nowrap;flex-wrap:nowrap;height:100%;position:relative;width:100%}.nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX{-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-BPrWId{-webkit-flex-grow:1;-webkit-box-flex:1;flex-grow:1;font-family:Google Sans,arial,sans-serif;font-weight:500;overflow:hidden;text-overflow:ellipsis;vertical-align:top}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-BPrWId{font-weight:300}.nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX .nsm7Bb-HzV7m-LgbsSe-BPrWId{-webkit-flex-grow:0;-webkit-box-flex:0;flex-grow:0}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-MJoBVe{-webkit-transition:background-color .218s;transition:background-color .218s;bottom:0;left:0;position:absolute;right:0;top:0}.nsm7Bb-HzV7m-LgbsSe:focus,.nsm7Bb-HzV7m-LgbsSe:hover{box-shadow:none;border-color:rgb(210,227,252);outline:none}.nsm7Bb-HzV7m-LgbsSe:focus-within{outline:2px solid #00639b;border-color:transparent}.nsm7Bb-HzV7m-LgbsSe:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(66,133,244,.08)}.nsm7Bb-HzV7m-LgbsSe:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe,.nsm7Bb-HzV7m-LgbsSe:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(66,133,244,.1)}.nsm7Bb-HzV7m-LgbsSe.i5vt6e-to915-Ia7Qfc:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.08)}.nsm7Bb-HzV7m-LgbsSe.i5vt6e-to915-Ia7Qfc:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe,.nsm7Bb-HzV7m-LgbsSe.i5vt6e-to915-Ia7Qfc:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.12)}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.24)}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe,.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.32)}.nsm7Bb-HzV7m-LgbsSe .n1UuX-DkfjY{border-radius:50%;display:-webkit-box;display:-webkit-flex;display:flex;height:20px;margin-left:-4px;margin-right:8px;min-width:20px;width:20px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId{font-family:Roboto;font-size:12px;text-align:left}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .fmcmS,.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .ssJRIf{overflow:hidden;text-overflow:ellipsis}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;-webkit-box-align:center;align-items:center;color:#5f6368;fill:#5f6368;font-size:11px;font-weight:400}.nsm7Bb-HzV7m-LgbsSe.jVeSEe.i5vt6e-to915-Ia7Qfc .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{color:#c4c7c5;fill:#c4c7c5}.nsm7Bb-HzV7m-LgbsSe.jVeSEe.MFS4be-Ia7Qfc .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{color:#e8eaed;fill:#e8eaed}@media screen and (prefers-contrast:more){.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff,.nsm7Bb-HzV7m-LgbsSe.jVeSEe.MFS4be-Ia7Qfc .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{color:#000;fill:#000}}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .Bz112c{height:18px;margin:-3px -3px -3px 2px;min-width:18px;width:18px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{border-top-left-radius:0;border-bottom-left-radius:0;border-top-right-radius:3px;border-bottom-right-radius:3px;margin-left:12px;margin-right:-10px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{border-radius:18px}.L5Fo6c-sM5MNb{border:0;display:block;left:0;position:relative;top:0}.L5Fo6c-bF1uUb{border-radius:4px;bottom:0;cursor:pointer;left:0;position:absolute;right:0;top:0}.L5Fo6c-bF1uUb:focus{border:none;outline:none}sentinel{}</style><script src="https://bat.bing.com/p/action/343243455.js" type="text/javascript" async="" data-ueto="ueto_64f459398c"></script><style type="text/css">[data-vaul-drawer]{touch-action:none;will-change:transform;transition:transform .5s cubic-bezier(.32, .72, 0, 1);animation-duration:.5s;animation-timing-function:cubic-bezier(0.32,0.72,0,1)}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=bottom][data-state=open]{animation-name:slideFromBottom}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=bottom][data-state=closed]{animation-name:slideToBottom}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=top][data-state=open]{animation-name:slideFromTop}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=top][data-state=closed]{animation-name:slideToTop}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=left][data-state=open]{animation-name:slideFromLeft}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=left][data-state=closed]{animation-name:slideToLeft}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=right][data-state=open]{animation-name:slideFromRight}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=right][data-state=closed]{animation-name:slideToRight}[data-vaul-drawer][data-vaul-snap-points=true][data-vaul-drawer-direction=bottom]{transform:translate3d(0,var(--initial-transform,100%),0)}[data-vaul-drawer][data-vaul-snap-points=true][data-vaul-drawer-direction=top]{transform:translate3d(0,calc(var(--initial-transform,100%) * -1),0)}[data-vaul-drawer][data-vaul-snap-points=true][data-vaul-drawer-direction=left]{transform:translate3d(calc(var(--initial-transform,100%) * -1),0,0)}[data-vaul-drawer][data-vaul-snap-points=true][data-vaul-drawer-direction=right]{transform:translate3d(var(--initial-transform,100%),0,0)}[data-vaul-drawer][data-vaul-delayed-snap-points=true][data-vaul-drawer-direction=top]{transform:translate3d(0,var(--snap-point-height,0),0)}[data-vaul-drawer][data-vaul-delayed-snap-points=true][data-vaul-drawer-direction=bottom]{transform:translate3d(0,var(--snap-point-height,0),0)}[data-vaul-drawer][data-vaul-delayed-snap-points=true][data-vaul-drawer-direction=left]{transform:translate3d(var(--snap-point-height,0),0,0)}[data-vaul-drawer][data-vaul-delayed-snap-points=true][data-vaul-drawer-direction=right]{transform:translate3d(var(--snap-point-height,0),0,0)}[data-vaul-overlay][data-vaul-snap-points=false]{animation-duration:.5s;animation-timing-function:cubic-bezier(0.32,0.72,0,1)}[data-vaul-overlay][data-vaul-snap-points=false][data-state=open]{animation-name:fadeIn}[data-vaul-overlay][data-state=closed]{animation-name:fadeOut}[data-vaul-animate=false]{animation:none!important}[data-vaul-overlay][data-vaul-snap-points=true]{opacity:0;transition:opacity .5s cubic-bezier(.32, .72, 0, 1)}[data-vaul-overlay][data-vaul-snap-points=true]{opacity:1}[data-vaul-drawer]:not([data-vaul-custom-container=true])::after{content:'';position:absolute;background:inherit;background-color:inherit}[data-vaul-drawer][data-vaul-drawer-direction=top]::after{top:initial;bottom:100%;left:0;right:0;height:200%}[data-vaul-drawer][data-vaul-drawer-direction=bottom]::after{top:100%;bottom:initial;left:0;right:0;height:200%}[data-vaul-drawer][data-vaul-drawer-direction=left]::after{left:initial;right:100%;top:0;bottom:0;width:200%}[data-vaul-drawer][data-vaul-drawer-direction=right]::after{left:100%;right:initial;top:0;bottom:0;width:200%}[data-vaul-overlay][data-vaul-snap-points=true]:not([data-vaul-snap-points-overlay=true]):not(
+[data-state=closed]
+){opacity:0}[data-vaul-overlay][data-vaul-snap-points-overlay=true]{opacity:1}[data-vaul-handle]{display:block;position:relative;opacity:.7;background:#e2e2e4;margin-left:auto;margin-right:auto;height:5px;width:32px;border-radius:1rem;touch-action:pan-y}[data-vaul-handle]:active,[data-vaul-handle]:hover{opacity:1}[data-vaul-handle-hitarea]{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:max(100%,2.75rem);height:max(100%,2.75rem);touch-action:inherit}@media (hover:hover) and (pointer:fine){[data-vaul-drawer]{user-select:none}}@media (pointer:fine){[data-vaul-handle-hitarea]:{width:100%;height:100%}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes fadeOut{to{opacity:0}}@keyframes slideFromBottom{from{transform:translate3d(0,var(--initial-transform,100%),0)}to{transform:translate3d(0,0,0)}}@keyframes slideToBottom{to{transform:translate3d(0,var(--initial-transform,100%),0)}}@keyframes slideFromTop{from{transform:translate3d(0,calc(var(--initial-transform,100%) * -1),0)}to{transform:translate3d(0,0,0)}}@keyframes slideToTop{to{transform:translate3d(0,calc(var(--initial-transform,100%) * -1),0)}}@keyframes slideFromLeft{from{transform:translate3d(calc(var(--initial-transform,100%) * -1),0,0)}to{transform:translate3d(0,0,0)}}@keyframes slideToLeft{to{transform:translate3d(calc(var(--initial-transform,100%) * -1),0,0)}}@keyframes slideFromRight{from{transform:translate3d(var(--initial-transform,100%),0,0)}to{transform:translate3d(0,0,0)}}@keyframes slideToRight{to{transform:translate3d(var(--initial-transform,100%),0,0)}}</style><link rel="stylesheet" type="text/css" href="https://cdn.paddle.com/paddle/v2/assets/css/paddle.css" media="all"><script src="https://public.profitwell.com/js/profitwell.js?auth=paddletoken_live_b30093d99d7846644b2e678861f"></script><script src="https://claritycdn.com/js/runner.js?_=1787813594343" async=""></script><link rel="modulepreload" as="script" crossorigin="" href="/chunks/PreviewLoading.tsx-Ek6200xQ.js"><link rel="modulepreload" as="script" crossorigin="" href="/chunks/chunk-BicTrCHk.js"><meta name="google" content="notranslate"><link rel="modulepreload" as="script" crossorigin="" href="/chunks/agent-session.js-YxCaypcU.js"><link rel="modulepreload" as="script" crossorigin="" href="/chunks/chunk--QM2LZfv.js"><link rel="modulepreload" as="script" crossorigin="" href="/chunks/index.js-DjS6XQQE.js"><link rel="modulepreload" as="script" crossorigin="" href="/chunks/chunk-CXVaMh82.js"><link rel="modulepreload" as="script" crossorigin="" href="/chunks/chunk-B55t0wGI.js"><link rel="modulepreload" as="script" crossorigin="" href="/chunks/chunk-eGeoT8Mx.js"><link rel="modulepreload" as="script" crossorigin="" href="/chunks/chunk-PalxAwQ_.js"><link rel="modulepreload" as="script" crossorigin="" href="/chunks/chunk-BVQCr-HH.js"><link rel="modulepreload" as="script" crossorigin="" href="/chunks/index.js-BNyXNyGs.js"><link rel="modulepreload" as="script" crossorigin="" href="/chunks/chunk-BKeAZ54T.js"><link rel="modulepreload" as="script" crossorigin="" href="/chunks/index.js-OGdHZqAi.js"><link rel="modulepreload" as="script" crossorigin="" href="/chunks/index.js-DP5vScuw.js"><link rel="modulepreload" as="script" crossorigin="" href="/chunks/chunk-DUaaxSce.js"><link rel="modulepreload" as="script" crossorigin="" href="/chunks/chunk-CDS8nJy6.js"><link rel="modulepreload" as="script" crossorigin="" href="/chunks/chunk-Bb7irpQQ.js"><link rel="modulepreload" as="script" crossorigin="" href="/chunks/index.js-CONJaGiG.js"><link rel="modulepreload" as="script" crossorigin="" href="/chunks/index.js-Chs8Shl6.js"><link rel="modulepreload" as="script" crossorigin="" href="/chunks/index.js-BOe-aJnI.js"><link rel="modulepreload" as="script" crossorigin="" href="/chunks/chunk-BJJZNqVX.js"><link rel="modulepreload" as="script" crossorigin="" href="/chunks/index.js-Bij9NUdr.js"></head>
+  <body class="notranslate">
+    <div id="root"> <div class="font-sans antialiased h-dvh md:h-screen"><div class="flex items-center justify-center relative h-full min-h-[100dvh] w-full bg-[#090D0F]"><div class="relative w-full h-full"><iframe sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-downloads" src="https://craftsman-bulgaria.preview.static.emergentagent.com" title="CDN Preview" class="w-full h-full border-0 shadow-2xl" style="background: white;"></iframe><div class="fixed max-md:flex-col flex items-center justify-between p-4 md:p-[10px] md:pl-4 inset-x-0 z-[9999] mx-auto gap-10 md:rounded-[40px] md:min-h-[44px] shadow-[0_155px_44px_0_rgba(0,0,0,0.00),0_99px_40px_0_rgba(0,0,0,0.01),0_56px_34px_0_rgba(0,0,0,0.04),0_25px_25px_0_rgba(0,0,0,0.07),0_6px_14px_0_rgba(0,0,0,0.09)] transition-colors duration-300 ease-in-out w-fit bg-[#1F2533] bottom-4"><div class="flex items-center gap-3 md:gap-4 max-md:flex-col"><p class="text-base font-medium text-white max-md:text-[14px] max-md:leading-[20px]">Frontend Preview Only. Please wake servers to enable backend functionality.</p><button type="button" class="px-4 max-md:min-h-[40px] max-md:w-full py-1.5 text-sm font-medium rounded-[26px] transition-colors flex items-center justify-center backdrop-blur-[25px]" style="background: radial-gradient(50% 50%, rgba(63, 243, 200, 0.15) 0%, rgba(63, 243, 200, 0.08) 100%);"><span style="background: linear-gradient(rgb(0, 255, 102) 0%, rgb(98, 236, 254) 100%) text; -webkit-text-fill-color: transparent; filter: drop-shadow(rgba(0, 255, 102, 0.5) 0px 0px 17.94px) drop-shadow(rgba(98, 236, 254, 0.2) 0px 0px 17.94px);">Wake up servers</span></button></div></div></div></div><div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;"><ol tabindex="-1" class="fixed top-0 z-[99999] flex max-h-screen w-full flex-col-reverse gap-2 p-4 sm:bottom-0 sm:left-0 sm:top-auto sm:flex-col md:max-w-[420px]"></ol></div></div><div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;"><ol tabindex="-1" class="fixed z-[99999] flex flex-col gap-3 outline-none max-md:left-2 max-md:right-2 bottom-4 left-1/2 -translate-x-1/2 flex-col-reverse max-md:transform-none max-md:translate-x-0"></ol></div></div>
+    <!-- No GTM/Meta <noscript> iframes: they load before any JS, so the consent gate cannot reach them. -->
+  <script type="text/javascript" crossorigin="anonymous" src="https://ap.emergent.sh/array/phc_DbsPb39SRc8z3EiQ6Dhj6ikv4H4rTKcht9d4sZSesceP/config.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a31928623ffcd0f7',t:'MTc4NzgxMzU5MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe>
+
+<script type="text/javascript" id="" charset="">function create_UUID(){var a=(new Date).getTime(),d="xxxxxxxx-xxxx-4xxx-yxxxxxxxxxxxxxxx".replace(/[xy]/g,function(b){var c=(a+Math.random()*16)%16|0;a=Math.floor(a/16);return(b=="x"?c:c&3|8).toString(16)});return d}function createCookie(a,d,b){var c=new Date;c.setTime(c.getTime()+b*60*60*1E3);b=";expires\x3d"+c.toGMTString();document.cookie=d&&d!=="undefined"?a+"\x3d"+d+b+"; path\x3d/":a+"\x3d"+create_UUID()+b+"; path\x3d/"}createCookie("FPC",google_tag_manager["rm"]["226553076"](4),168);</script>
+
+<script type="text/javascript" id="" charset="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1732229534163388",{em:"undefined"});fbq("track","PageView");fbq("track","SubscribedButtonClick");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1732229534163388&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<script type="text/javascript" id="" charset="">var value=(new URL(location.href)).searchParams.get("utm_prid");if(value){var date=new Date;date.setTime(date.getTime()+2592E6);document.cookie="prop_visitor_id\x3d"+(value||"")+"; expires\x3d"+date.toUTCString()+"; path\x3d/"};</script>
+<script type="text/javascript" id="" charset="">!function(d,g,e){d.TiktokAnalyticsObject=e;var a=d[e]=d[e]||[];a.methods="page track identify instances debug on off once ready alias group enableCookie disableCookie holdConsent revokeConsent grantConsent".split(" ");a.setAndDefer=function(b,c){b[c]=function(){b.push([c].concat(Array.prototype.slice.call(arguments,0)))}};for(d=0;d<a.methods.length;d++)a.setAndDefer(a,a.methods[d]);a.instance=function(b){b=a._i[b]||[];for(var c=0;c<a.methods.length;c++)a.setAndDefer(b,a.methods[c]);return b};a.load=
+function(b,c){var f="https://analytics.tiktok.com/i18n/pixel/events.js";a._i=a._i||{};a._i[b]=[];a._i[b]._u=f;a._t=a._t||{};a._t[b]=+new Date;a._o=a._o||{};a._o[b]=c||{};c=document.createElement("script");c.type="text/javascript";c.async=!0;c.src=f+"?sdkid\x3d"+b+"\x26lib\x3d"+e;b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(c,b)};a.load("D4FFK4BC77UCLPL6NL90",{advanced_matching:!0});a.page()}(window,document,"ttq");</script>
+<meta name="facebook-domain-verification" content="669ilma0h2dlj0a8ou27f0f0gdq2at"><script type="text/javascript" id="" charset="">(function(){try{var c=["utm_source","utm_medium","utm_campaign","utm_term","utm_content"],d=new URLSearchParams(window.location.search);c.forEach(function(a){var b=d.get(a);b&&!localStorage.getItem("em_"+a)&&localStorage.setItem("em_"+a,b)})}catch(a){}})();</script><script type="text/javascript" id="" charset="">(function(){try{var c="utm_source utm_medium utm_campaign utm_term utm_content gclid gbraid wbraid fbclid".split(" "),d=new URLSearchParams(window.location.search),e=(new Date(Date.now()+7776E6)).toUTCString();c.forEach(function(a){var b=d.get(a);b&&!(new RegExp("(?:^|; )"+a+"\x3d")).test(document.cookie)&&(document.cookie=a+"\x3d"+encodeURIComponent(b)+"; domain\x3d.emergent.sh; path\x3d/; expires\x3d"+e+"; SameSite\x3dLax; Secure")})}catch(a){}})();</script>
+<script type="text/javascript" id="" charset="">!function(d,g,e){d.TiktokAnalyticsObject=e;var a=d[e]=d[e]||[];a.methods="page track identify instances debug on off once ready alias group enableCookie disableCookie holdConsent revokeConsent grantConsent".split(" ");a.setAndDefer=function(b,c){b[c]=function(){b.push([c].concat(Array.prototype.slice.call(arguments,0)))}};for(d=0;d<a.methods.length;d++)a.setAndDefer(a,a.methods[d]);a.instance=function(b){b=a._i[b]||[];for(var c=0;c<a.methods.length;c++)a.setAndDefer(b,a.methods[c]);return b};a.load=
+function(b,c){var f="https://analytics.tiktok.com/i18n/pixel/events.js";a._i=a._i||{};a._i[b]=[];a._i[b]._u=f;a._t=a._t||{};a._t[b]=+new Date;a._o=a._o||{};a._o[b]=c||{};c=document.createElement("script");c.type="text/javascript";c.async=!0;c.src=f+"?sdkid\x3d"+b+"\x26lib\x3d"+e;b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(c,b)};a.load("D2DN3IJC77U5663GUR8G");a.page()}(window,document,"ttq");</script>
+<script id="" text="" charset="" type="text/javascript" src="https://claritycdn.com/js/atom.js"></script><div id="batBeacon726599682092" style="width: 0px; height: 0px; display: none; visibility: hidden;"><img id="batBeacon847052162837" width="0" height="0" alt="" src="https://bat.bing.net/action/0?ti=343243455&amp;tm=gtm002&amp;Ver=2&amp;mid=0fdbb7b1-575a-4f16-9b47-972b15d7e874&amp;bo=2&amp;uach=pv%3D19.0.0&amp;pi=918639831&amp;lg=en-US&amp;sw=800&amp;sh=600&amp;sc=24&amp;nwd=1&amp;tl=Emergent&amp;kw=no-code%20development,%20AI%20app%20builder,%20software%20development,%20web%20app%20creator,%20mobile%20app%20development,%20AI%20coding%20assistant&amp;p=https%3A%2F%2Fcraftsman-bulgaria.preview.emergentagent.com%2F&amp;r=&amp;evt=pageLoad&amp;ifm=1&amp;sv=2&amp;asc=D&amp;cdb=AQAY&amp;rn=526725" style="width: 0px; height: 0px; display: none; visibility: hidden;"></div><iframe src="about:blank" style="display: block !important; position: absolute; top: 0px; left: 0px; visibility: hidden;"></iframe><div id="criteo-tags-div" style="display: none;"><iframe src="https://gum.criteo.com/syncframe?topUrl=app.emergent.sh&amp;origin=onetag#{%22bundle%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22cw%22:false,%22optout%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22origin%22:%22onetag%22,%22tld%22:%22app.emergent.sh%22,%22topUrl%22:%22app.emergent.sh%22,%22version%22:%225_48_0%22,%22ifa%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22lsw%22:true,%22pm%22:0,%22requestId%22:%2242725953-e912-4070-bfc2-12f109cde15a%22}" id="criteo-syncframe-onetag" hidden="" sandbox="allow-scripts allow-same-origin" aria-hidden="true" tabindex="-1" title="Criteo GUM iframe"></iframe><script async="true" type="text/javascript" src="https://sslwidget.criteo.com/event?a=%5B128092%2C130464%2C130465%2C130463%5D&amp;v=5.48.0&amp;p0=e%3Dvpg&amp;p1=e%3Dexd%26ref%3Dhttps%253A%252F%252Fcraftsman-bulgaria.preview.emergentagent.com&amp;tld=app.emergent.sh&amp;dy=1&amp;fu=https%253A%252F%252Fapp.emergent.sh%252Floading-preview%253Fhost%253Dcraftsman-bulgaria.preview.emergentagent.com&amp;pu=https%253A%252F%252Fcraftsman-bulgaria.preview.emergentagent.com&amp;ceid=3f179fc6-9299-4106-be50-92884f3936d8"></script></div></body></html>
+<!-- FRAME: about:blank -->
+<html><head><script>window.__CF$cv$params={r:'a319285fa9b4a72c',t:'MTc4NzgxMzU5MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);</script><script src="/cdn-cgi/challenge-platform/scripts/jsd/main.js"></script></head><body></body></html>
+<!-- FRAME: about:blank -->
+<html><head><script>window.__CF$cv$params={r:'a31928623ffcd0f7',t:'MTc4NzgxMzU5MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);</script><script src="/cdn-cgi/challenge-platform/scripts/jsd/main.js"></script></head><body></body></html>
+<!-- FRAME: https://craftsman-bulgaria.preview.static.emergentagent.com/ -->
+<html lang="en" class="lenis"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000"><meta name="description" content="A product of emergent.sh"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&amp;display=swap" rel="stylesheet"><title>Emergent | Fullstack App</title><script type="text/javascript" crossorigin="anonymous" async="" src="https://ap.emergent.sh/static/array.js"></script><script>window.addEventListener("error",function(e){e.error instanceof DOMException&&"DataCloneError"===e.error.name&&e.message&&e.message.includes("PerformanceServerTiming")&&(e.stopImmediatePropagation(),e.preventDefault())},!0)</script><script src="https://assets.emergent.sh/scripts/emergent-main.js"></script><script defer="defer" src="/pod-backups/craftsman-bulgaria/build/static/js/main.426219d2.js"></script><link href="/pod-backups/craftsman-bulgaria/build/static/css/main.2aa71093.css" rel="stylesheet"><style type="text/css">[data-sonner-toaster][dir=ltr],html[dir=ltr]{--toast-icon-margin-start:-3px;--toast-icon-margin-end:4px;--toast-svg-margin-start:-1px;--toast-svg-margin-end:0px;--toast-button-margin-start:auto;--toast-button-margin-end:0;--toast-close-button-start:0;--toast-close-button-end:unset;--toast-close-button-transform:translate(-35%, -35%)}[data-sonner-toaster][dir=rtl],html[dir=rtl]{--toast-icon-margin-start:4px;--toast-icon-margin-end:-3px;--toast-svg-margin-start:0px;--toast-svg-margin-end:-1px;--toast-button-margin-start:0;--toast-button-margin-end:auto;--toast-close-button-start:unset;--toast-close-button-end:0;--toast-close-button-transform:translate(35%, -35%)}[data-sonner-toaster]{position:fixed;width:var(--width);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;--gray1:hsl(0, 0%, 99%);--gray2:hsl(0, 0%, 97.3%);--gray3:hsl(0, 0%, 95.1%);--gray4:hsl(0, 0%, 93%);--gray5:hsl(0, 0%, 90.9%);--gray6:hsl(0, 0%, 88.7%);--gray7:hsl(0, 0%, 85.8%);--gray8:hsl(0, 0%, 78%);--gray9:hsl(0, 0%, 56.1%);--gray10:hsl(0, 0%, 52.3%);--gray11:hsl(0, 0%, 43.5%);--gray12:hsl(0, 0%, 9%);--border-radius:8px;box-sizing:border-box;padding:0;margin:0;list-style:none;outline:0;z-index:999999999;transition:transform .4s ease}[data-sonner-toaster][data-lifted=true]{transform:translateY(-8px)}@media (hover:none) and (pointer:coarse){[data-sonner-toaster][data-lifted=true]{transform:none}}[data-sonner-toaster][data-x-position=right]{right:var(--offset-right)}[data-sonner-toaster][data-x-position=left]{left:var(--offset-left)}[data-sonner-toaster][data-x-position=center]{left:50%;transform:translateX(-50%)}[data-sonner-toaster][data-y-position=top]{top:var(--offset-top)}[data-sonner-toaster][data-y-position=bottom]{bottom:var(--offset-bottom)}[data-sonner-toast]{--y:translateY(100%);--lift-amount:calc(var(--lift) * var(--gap));z-index:var(--z-index);position:absolute;opacity:0;transform:var(--y);touch-action:none;transition:transform .4s,opacity .4s,height .4s,box-shadow .2s;box-sizing:border-box;outline:0;overflow-wrap:anywhere}[data-sonner-toast][data-styled=true]{padding:16px;background:var(--normal-bg);border:1px solid var(--normal-border);color:var(--normal-text);border-radius:var(--border-radius);box-shadow:0 4px 12px rgba(0,0,0,.1);width:var(--width);font-size:13px;display:flex;align-items:center;gap:6px}[data-sonner-toast]:focus-visible{box-shadow:0 4px 12px rgba(0,0,0,.1),0 0 0 2px rgba(0,0,0,.2)}[data-sonner-toast][data-y-position=top]{top:0;--y:translateY(-100%);--lift:1;--lift-amount:calc(1 * var(--gap))}[data-sonner-toast][data-y-position=bottom]{bottom:0;--y:translateY(100%);--lift:-1;--lift-amount:calc(var(--lift) * var(--gap))}[data-sonner-toast][data-styled=true] [data-description]{font-weight:400;line-height:1.4;color:#3f3f3f}[data-rich-colors=true][data-sonner-toast][data-styled=true] [data-description]{color:inherit}[data-sonner-toaster][data-sonner-theme=dark] [data-description]{color:#e8e8e8}[data-sonner-toast][data-styled=true] [data-title]{font-weight:500;line-height:1.5;color:inherit}[data-sonner-toast][data-styled=true] [data-icon]{display:flex;height:16px;width:16px;position:relative;justify-content:flex-start;align-items:center;flex-shrink:0;margin-left:var(--toast-icon-margin-start);margin-right:var(--toast-icon-margin-end)}[data-sonner-toast][data-promise=true] [data-icon]>svg{opacity:0;transform:scale(.8);transform-origin:center;animation:sonner-fade-in .3s ease forwards}[data-sonner-toast][data-styled=true] [data-icon]>*{flex-shrink:0}[data-sonner-toast][data-styled=true] [data-icon] svg{margin-left:var(--toast-svg-margin-start);margin-right:var(--toast-svg-margin-end)}[data-sonner-toast][data-styled=true] [data-content]{display:flex;flex-direction:column;gap:2px}[data-sonner-toast][data-styled=true] [data-button]{border-radius:4px;padding-left:8px;padding-right:8px;height:24px;font-size:12px;color:var(--normal-bg);background:var(--normal-text);margin-left:var(--toast-button-margin-start);margin-right:var(--toast-button-margin-end);border:none;font-weight:500;cursor:pointer;outline:0;display:flex;align-items:center;flex-shrink:0;transition:opacity .4s,box-shadow .2s}[data-sonner-toast][data-styled=true] [data-button]:focus-visible{box-shadow:0 0 0 2px rgba(0,0,0,.4)}[data-sonner-toast][data-styled=true] [data-button]:first-of-type{margin-left:var(--toast-button-margin-start);margin-right:var(--toast-button-margin-end)}[data-sonner-toast][data-styled=true] [data-cancel]{color:var(--normal-text);background:rgba(0,0,0,.08)}[data-sonner-toaster][data-sonner-theme=dark] [data-sonner-toast][data-styled=true] [data-cancel]{background:rgba(255,255,255,.3)}[data-sonner-toast][data-styled=true] [data-close-button]{position:absolute;left:var(--toast-close-button-start);right:var(--toast-close-button-end);top:0;height:20px;width:20px;display:flex;justify-content:center;align-items:center;padding:0;color:var(--gray12);background:var(--normal-bg);border:1px solid var(--gray4);transform:var(--toast-close-button-transform);border-radius:50%;cursor:pointer;z-index:1;transition:opacity .1s,background .2s,border-color .2s}[data-sonner-toast][data-styled=true] [data-close-button]:focus-visible{box-shadow:0 4px 12px rgba(0,0,0,.1),0 0 0 2px rgba(0,0,0,.2)}[data-sonner-toast][data-styled=true] [data-disabled=true]{cursor:not-allowed}[data-sonner-toast][data-styled=true]:hover [data-close-button]:hover{background:var(--gray2);border-color:var(--gray5)}[data-sonner-toast][data-swiping=true]::before{content:'';position:absolute;left:-100%;right:-100%;height:100%;z-index:-1}[data-sonner-toast][data-y-position=top][data-swiping=true]::before{bottom:50%;transform:scaleY(3) translateY(50%)}[data-sonner-toast][data-y-position=bottom][data-swiping=true]::before{top:50%;transform:scaleY(3) translateY(-50%)}[data-sonner-toast][data-swiping=false][data-removed=true]::before{content:'';position:absolute;inset:0;transform:scaleY(2)}[data-sonner-toast][data-expanded=true]::after{content:'';position:absolute;left:0;height:calc(var(--gap) + 1px);bottom:100%;width:100%}[data-sonner-toast][data-mounted=true]{--y:translateY(0);opacity:1}[data-sonner-toast][data-expanded=false][data-front=false]{--scale:var(--toasts-before) * 0.05 + 1;--y:translateY(calc(var(--lift-amount) * var(--toasts-before))) scale(calc(-1 * var(--scale)));height:var(--front-toast-height)}[data-sonner-toast]>*{transition:opacity .4s}[data-sonner-toast][data-x-position=right]{right:0}[data-sonner-toast][data-x-position=left]{left:0}[data-sonner-toast][data-expanded=false][data-front=false][data-styled=true]>*{opacity:0}[data-sonner-toast][data-visible=false]{opacity:0;pointer-events:none}[data-sonner-toast][data-mounted=true][data-expanded=true]{--y:translateY(calc(var(--lift) * var(--offset)));height:var(--initial-height)}[data-sonner-toast][data-removed=true][data-front=true][data-swipe-out=false]{--y:translateY(calc(var(--lift) * -100%));opacity:0}[data-sonner-toast][data-removed=true][data-front=false][data-swipe-out=false][data-expanded=true]{--y:translateY(calc(var(--lift) * var(--offset) + var(--lift) * -100%));opacity:0}[data-sonner-toast][data-removed=true][data-front=false][data-swipe-out=false][data-expanded=false]{--y:translateY(40%);opacity:0;transition:transform .5s,opacity .2s}[data-sonner-toast][data-removed=true][data-front=false]::before{height:calc(var(--initial-height) + 20%)}[data-sonner-toast][data-swiping=true]{transform:var(--y) translateY(var(--swipe-amount-y,0)) translateX(var(--swipe-amount-x,0));transition:none}[data-sonner-toast][data-swiped=true]{user-select:none}[data-sonner-toast][data-swipe-out=true][data-y-position=bottom],[data-sonner-toast][data-swipe-out=true][data-y-position=top]{animation-duration:.2s;animation-timing-function:ease-out;animation-fill-mode:forwards}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=left]{animation-name:swipe-out-left}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=right]{animation-name:swipe-out-right}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=up]{animation-name:swipe-out-up}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=down]{animation-name:swipe-out-down}@keyframes swipe-out-left{from{transform:var(--y) translateX(var(--swipe-amount-x));opacity:1}to{transform:var(--y) translateX(calc(var(--swipe-amount-x) - 100%));opacity:0}}@keyframes swipe-out-right{from{transform:var(--y) translateX(var(--swipe-amount-x));opacity:1}to{transform:var(--y) translateX(calc(var(--swipe-amount-x) + 100%));opacity:0}}@keyframes swipe-out-up{from{transform:var(--y) translateY(var(--swipe-amount-y));opacity:1}to{transform:var(--y) translateY(calc(var(--swipe-amount-y) - 100%));opacity:0}}@keyframes swipe-out-down{from{transform:var(--y) translateY(var(--swipe-amount-y));opacity:1}to{transform:var(--y) translateY(calc(var(--swipe-amount-y) + 100%));opacity:0}}@media (max-width:600px){[data-sonner-toaster]{position:fixed;right:var(--mobile-offset-right);left:var(--mobile-offset-left);width:100%}[data-sonner-toaster][dir=rtl]{left:calc(var(--mobile-offset-left) * -1)}[data-sonner-toaster] [data-sonner-toast]{left:0;right:0;width:calc(100% - var(--mobile-offset-left) * 2)}[data-sonner-toaster][data-x-position=left]{left:var(--mobile-offset-left)}[data-sonner-toaster][data-y-position=bottom]{bottom:var(--mobile-offset-bottom)}[data-sonner-toaster][data-y-position=top]{top:var(--mobile-offset-top)}[data-sonner-toaster][data-x-position=center]{left:var(--mobile-offset-left);right:var(--mobile-offset-right);transform:none}}[data-sonner-toaster][data-sonner-theme=light]{--normal-bg:#fff;--normal-border:var(--gray4);--normal-text:var(--gray12);--success-bg:hsl(143, 85%, 96%);--success-border:hsl(145, 92%, 87%);--success-text:hsl(140, 100%, 27%);--info-bg:hsl(208, 100%, 97%);--info-border:hsl(221, 91%, 93%);--info-text:hsl(210, 92%, 45%);--warning-bg:hsl(49, 100%, 97%);--warning-border:hsl(49, 91%, 84%);--warning-text:hsl(31, 92%, 45%);--error-bg:hsl(359, 100%, 97%);--error-border:hsl(359, 100%, 94%);--error-text:hsl(360, 100%, 45%)}[data-sonner-toaster][data-sonner-theme=light] [data-sonner-toast][data-invert=true]{--normal-bg:#000;--normal-border:hsl(0, 0%, 20%);--normal-text:var(--gray1)}[data-sonner-toaster][data-sonner-theme=dark] [data-sonner-toast][data-invert=true]{--normal-bg:#fff;--normal-border:var(--gray3);--normal-text:var(--gray12)}[data-sonner-toaster][data-sonner-theme=dark]{--normal-bg:#000;--normal-bg-hover:hsl(0, 0%, 12%);--normal-border:hsl(0, 0%, 20%);--normal-border-hover:hsl(0, 0%, 25%);--normal-text:var(--gray1);--success-bg:hsl(150, 100%, 6%);--success-border:hsl(147, 100%, 12%);--success-text:hsl(150, 86%, 65%);--info-bg:hsl(215, 100%, 6%);--info-border:hsl(223, 43%, 17%);--info-text:hsl(216, 87%, 65%);--warning-bg:hsl(64, 100%, 6%);--warning-border:hsl(60, 100%, 9%);--warning-text:hsl(46, 87%, 65%);--error-bg:hsl(358, 76%, 10%);--error-border:hsl(357, 89%, 16%);--error-text:hsl(358, 100%, 81%)}[data-sonner-toaster][data-sonner-theme=dark] [data-sonner-toast] [data-close-button]{background:var(--normal-bg);border-color:var(--normal-border);color:var(--normal-text)}[data-sonner-toaster][data-sonner-theme=dark] [data-sonner-toast] [data-close-button]:hover{background:var(--normal-bg-hover);border-color:var(--normal-border-hover)}[data-rich-colors=true][data-sonner-toast][data-type=success]{background:var(--success-bg);border-color:var(--success-border);color:var(--success-text)}[data-rich-colors=true][data-sonner-toast][data-type=success] [data-close-button]{background:var(--success-bg);border-color:var(--success-border);color:var(--success-text)}[data-rich-colors=true][data-sonner-toast][data-type=info]{background:var(--info-bg);border-color:var(--info-border);color:var(--info-text)}[data-rich-colors=true][data-sonner-toast][data-type=info] [data-close-button]{background:var(--info-bg);border-color:var(--info-border);color:var(--info-text)}[data-rich-colors=true][data-sonner-toast][data-type=warning]{background:var(--warning-bg);border-color:var(--warning-border);color:var(--warning-text)}[data-rich-colors=true][data-sonner-toast][data-type=warning] [data-close-button]{background:var(--warning-bg);border-color:var(--warning-border);color:var(--warning-text)}[data-rich-colors=true][data-sonner-toast][data-type=error]{background:var(--error-bg);border-color:var(--error-border);color:var(--error-text)}[data-rich-colors=true][data-sonner-toast][data-type=error] [data-close-button]{background:var(--error-bg);border-color:var(--error-border);color:var(--error-text)}.sonner-loading-wrapper{--size:16px;height:var(--size);width:var(--size);position:absolute;inset:0;z-index:10}.sonner-loading-wrapper[data-visible=false]{transform-origin:center;animation:sonner-fade-out .2s ease forwards}.sonner-spinner{position:relative;top:50%;left:50%;height:var(--size);width:var(--size)}.sonner-loading-bar{animation:sonner-spin 1.2s linear infinite;background:var(--gray11);border-radius:6px;height:8%;left:-10%;position:absolute;top:-3.9%;width:24%}.sonner-loading-bar:first-child{animation-delay:-1.2s;transform:rotate(.0001deg) translate(146%)}.sonner-loading-bar:nth-child(2){animation-delay:-1.1s;transform:rotate(30deg) translate(146%)}.sonner-loading-bar:nth-child(3){animation-delay:-1s;transform:rotate(60deg) translate(146%)}.sonner-loading-bar:nth-child(4){animation-delay:-.9s;transform:rotate(90deg) translate(146%)}.sonner-loading-bar:nth-child(5){animation-delay:-.8s;transform:rotate(120deg) translate(146%)}.sonner-loading-bar:nth-child(6){animation-delay:-.7s;transform:rotate(150deg) translate(146%)}.sonner-loading-bar:nth-child(7){animation-delay:-.6s;transform:rotate(180deg) translate(146%)}.sonner-loading-bar:nth-child(8){animation-delay:-.5s;transform:rotate(210deg) translate(146%)}.sonner-loading-bar:nth-child(9){animation-delay:-.4s;transform:rotate(240deg) translate(146%)}.sonner-loading-bar:nth-child(10){animation-delay:-.3s;transform:rotate(270deg) translate(146%)}.sonner-loading-bar:nth-child(11){animation-delay:-.2s;transform:rotate(300deg) translate(146%)}.sonner-loading-bar:nth-child(12){animation-delay:-.1s;transform:rotate(330deg) translate(146%)}@keyframes sonner-fade-in{0%{opacity:0;transform:scale(.8)}100%{opacity:1;transform:scale(1)}}@keyframes sonner-fade-out{0%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(.8)}}@keyframes sonner-spin{0%{opacity:1}100%{opacity:.15}}@media (prefers-reduced-motion){.sonner-loading-bar,[data-sonner-toast],[data-sonner-toast]>*{transition:none!important;animation:none!important}}.sonner-loader{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);transform-origin:center;transition:opacity .2s,transform .2s}.sonner-loader[data-visible=false]{opacity:0;transform:scale(.8) translate(-50%,-50%)}</style></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="App min-h-screen bg-background text-foreground"><div class="grain-overlay" aria-hidden="true"></div><header class="fixed top-0 inset-x-0 z-50 transition-[background-color,border-color] duration-300 bg-transparent border-b border-transparent"><div class="max-w-7xl mx-auto px-5 sm:px-8 h-16 md:h-20 flex items-center justify-between"><a href="#top" data-testid="brand-logo" class="flex items-center gap-3 group"><span class="w-9 h-9 bg-primary flex items-center justify-center font-heading font-black text-white text-lg leading-none group-hover:rotate-90 transition-transform duration-300">М</span><span class="font-heading font-bold tracking-tight text-base md:text-lg">МайсторРемонти<span class="hidden sm:inline text-muted-foreground font-body font-normal text-xs ml-2">Професионални ремонтни дейности</span></span></a><nav class="hidden lg:flex items-center gap-8" data-testid="desktop-nav"><a href="#uslugi" data-testid="nav-uslugi" class="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200">Услуги</a><a href="#proces" data-testid="nav-proces" class="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200">Процес</a><a href="#galeria" data-testid="nav-galeria" class="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200">Преди и След</a><a href="#zashto-nas" data-testid="nav-zashto-nas" class="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200">Защо нас</a><a href="#zapitvane" data-testid="nav-zapitvane" class="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200">Запитване</a></nav><div class="flex items-center gap-3"><a href="tel:+359881234567" data-testid="header-call-button" class="hidden md:inline-flex items-center gap-2 bg-primary hover:bg-orange-500 text-white font-semibold text-sm px-5 py-2.5 rounded-full transition-[background-color,padding] duration-300 hover:px-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-4 h-4" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>Свържи се сега</a><button data-testid="mobile-menu-toggle" class="lg:hidden w-10 h-10 flex items-center justify-center border border-white/15 rounded-full" aria-label="Меню"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu w-5 h-5" aria-hidden="true"><path d="M4 12h16"></path><path d="M4 18h16"></path><path d="M4 6h16"></path></svg></button></div></div></header><main><section id="top" class="relative min-h-screen flex flex-col justify-end overflow-hidden blueprint-grid"><div class="absolute inset-0 -z-10" style="transform: none;"><img alt="Ремонт на интериор" class="w-full h-[120%] object-cover opacity-30" src="https://images.unsplash.com/photo-1618832515490-e181c4794a45?q=80&amp;w=2000&amp;auto=format&amp;fit=crop"><div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/30"></div></div><div class="max-w-7xl mx-auto w-full px-5 sm:px-8 pt-36 md:pt-44 pb-10" style="opacity: 1;"><p class="font-mono text-sm tracking-[0.3em] uppercase text-primary mb-6" data-testid="hero-kicker" style="opacity: 1;">София и региона · Професионален майстор-изпълнител</p><h1 class="font-heading font-black tracking-tighter leading-[0.98] text-4xl sm:text-5xl lg:text-7xl max-w-5xl" data-testid="hero-title"><span class="block overflow-hidden "><span class="block" style="transform: none;">Прецизни ремонтни</span></span><span class="block overflow-hidden "><span class="block" style="transform: none;">дейности и довършителни</span></span><span class="block overflow-hidden "><span class="block" style="transform: none;">работи <span class="text-primary">без компромис</span></span></span><span class="block overflow-hidden "><span class="block" style="transform: none;">в качеството.</span></span></h1><p class="mt-7 text-muted-foreground text-base md:text-lg max-w-2xl leading-relaxed" data-testid="hero-subtitle" style="opacity: 1; transform: none;">Шпакловка, боядисване, цялостен ремонт на бани, ВиК инсталации и покривни ремонти. Гарантиран срок, фиксирана цена и чист обект след нас.</p><div class="mt-9 flex flex-wrap items-center gap-4" style="opacity: 1; transform: none;"><a href="#zapitvane" data-testid="hero-primary-cta" class="inline-flex items-center gap-2 bg-primary hover:bg-orange-500 text-white font-heading font-bold px-8 py-4 rounded-full text-sm md:text-base transition-[background-color,padding] duration-300 hover:px-10">Поискай индивидуална оферта<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down w-4 h-4" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></a><a href="#uslugi" data-testid="hero-secondary-cta" class="inline-flex items-center gap-2 border border-white/20 hover:border-primary hover:text-primary font-semibold px-8 py-4 rounded-full text-sm md:text-base transition-[border-color,color] duration-300">Виж нашите услуги</a><a href="tel:+359881234567" data-testid="hero-phone-cta" class="md:hidden inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-4 h-4 text-primary" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>Обади се сега</a></div><div class="mt-16 md:mt-20 grid grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 border border-white/10"><div class="bg-slate-900/70 backdrop-blur-xl p-5 flex items-center gap-3" data-testid="trust-badge-0" style="opacity: 1; transform: none;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check w-5 h-5 text-primary shrink-0" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg><span class="text-sm font-medium leading-snug">100% Писмена гаранция</span></div><div class="bg-slate-900/70 backdrop-blur-xl p-5 flex items-center gap-3" data-testid="trust-badge-1" style="opacity: 1; transform: none;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ruler w-5 h-5 text-primary shrink-0" aria-hidden="true"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"></path><path d="m14.5 12.5 2-2"></path><path d="m11.5 9.5 2-2"></path><path d="m8.5 6.5 2-2"></path><path d="m17.5 15.5 2-2"></path></svg><span class="text-sm font-medium leading-snug">Безплатен първоначален оглед</span></div><div class="bg-slate-900/70 backdrop-blur-xl p-5 flex items-center gap-3" data-testid="trust-badge-2" style="opacity: 1; transform: none;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-check w-5 h-5 text-primary shrink-0" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="m9 16 2 2 4-4"></path></svg><span class="text-sm font-medium leading-snug">Коректни срокове</span></div><div class="bg-slate-900/70 backdrop-blur-xl p-5 flex items-center gap-3" data-testid="trust-badge-3" style="opacity: 1; transform: none;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-5 h-5 text-primary shrink-0" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg><span class="text-sm font-medium leading-snug">Чиста и организирана работа</span></div></div></div></section><div class="relative border-y border-white/10 bg-card py-5 overflow-hidden" data-testid="marquee"><div class="flex w-max animate-marquee whitespace-nowrap"><div class="flex items-center shrink-0"><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">МАЙСТОР РЕМОНТИ</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">ПРЕМИУМ КАЧЕСТВО</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">БЕЗКОМПРОМИСНО ИЗПЪЛНЕНИЕ</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">ФИКСИРАНА ЦЕНА</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">ПИСМЕНА ГАРАНЦИЯ</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">СОФИЯ И РЕГИОНА</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">МАЙСТОР РЕМОНТИ</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">ПРЕМИУМ КАЧЕСТВО</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">БЕЗКОМПРОМИСНО ИЗПЪЛНЕНИЕ</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">ФИКСИРАНА ЦЕНА</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">ПИСМЕНА ГАРАНЦИЯ</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">СОФИЯ И РЕГИОНА</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span></div><div class="flex items-center shrink-0"><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">МАЙСТОР РЕМОНТИ</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">ПРЕМИУМ КАЧЕСТВО</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">БЕЗКОМПРОМИСНО ИЗПЪЛНЕНИЕ</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">ФИКСИРАНА ЦЕНА</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">ПИСМЕНА ГАРАНЦИЯ</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">СОФИЯ И РЕГИОНА</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">МАЙСТОР РЕМОНТИ</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">ПРЕМИУМ КАЧЕСТВО</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">БЕЗКОМПРОМИСНО ИЗПЪЛНЕНИЕ</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">ФИКСИРАНА ЦЕНА</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">ПИСМЕНА ГАРАНЦИЯ</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span><span class="flex items-center font-heading font-bold tracking-widest text-sm md:text-base uppercase text-muted-foreground"><span class="px-6">СОФИЯ И РЕГИОНА</span><span class="w-2 h-2 bg-primary rotate-45 shrink-0"></span></span></div></div></div><section id="uslugi" class="py-24 md:py-32 bg-card border-y border-white/10" data-testid="services-section"><div class="max-w-7xl mx-auto px-5 sm:px-8"><div class="" style="opacity: 0; transform: translateY(36px);"><p class="font-mono text-sm tracking-[0.3em] uppercase text-primary mb-4" data-testid="services-kicker">Услуги</p><h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.08] mb-5">Детайлно. Категоризирано. Без скрити позиции.</h2><p class="text-muted-foreground text-base md:text-lg max-w-2xl leading-relaxed">Разгледайте пълния обхват на всяка категория — всяка оферта се изготвя позиция по позиция, с прозрачни цени в евро (€).</p></div><div class="mt-12 grid grid-cols-1 lg:grid-cols-12 gap-10"><div class="lg:col-span-4"><div class="lg:sticky lg:top-28 flex lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-2 -mx-5 px-5 lg:mx-0 lg:px-0" data-testid="services-tabs"><button data-testid="service-tab-shpaklovka" class="shrink-0 lg:shrink text-left border px-5 py-4 transition-[background-color,border-color] duration-300 min-w-[240px] lg:min-w-0 bg-primary/10 border-primary"><span class="font-mono text-xs text-primary">Категория A</span><span class="block font-heading font-bold text-base mt-1 leading-snug text-foreground">Шпакловка и бояджийски услуги</span></button><button data-testid="service-tab-vik" class="shrink-0 lg:shrink text-left border px-5 py-4 transition-[background-color,border-color] duration-300 min-w-[240px] lg:min-w-0 bg-transparent border-white/10 hover:border-white/30"><span class="font-mono text-xs text-muted-foreground">Категория B</span><span class="block font-heading font-bold text-base mt-1 leading-snug text-muted-foreground">ВиК услуги и инсталации</span></button><button data-testid="service-tab-banq" class="shrink-0 lg:shrink text-left border px-5 py-4 transition-[background-color,border-color] duration-300 min-w-[240px] lg:min-w-0 bg-transparent border-white/10 hover:border-white/30"><span class="font-mono text-xs text-muted-foreground">Категория C</span><span class="block font-heading font-bold text-base mt-1 leading-snug text-muted-foreground">Цялостен ремонт на баня</span></button><button data-testid="service-tab-pokriv" class="shrink-0 lg:shrink text-left border px-5 py-4 transition-[background-color,border-color] duration-300 min-w-[240px] lg:min-w-0 bg-transparent border-white/10 hover:border-white/30"><span class="font-mono text-xs text-muted-foreground">Категория D</span><span class="block font-heading font-bold text-base mt-1 leading-snug text-muted-foreground">Ремонт на покриви и хидроизолация</span></button></div></div><div class="lg:col-span-8"><div style="opacity: 1; transform: none;"><div class="border border-white/10 bg-background"><div class="p-6 md:p-8 border-b border-white/10"><p class="font-mono text-xs tracking-[0.3em] uppercase text-primary mb-2">Категория A</p><h3 class="font-heading font-extrabold text-xl md:text-2xl tracking-tight">Шпакловка и бояджийски услуги</h3><p class="text-muted-foreground text-sm mt-2">Стъклена гладкост на стени и тавани</p></div><div class="px-6 md:px-8" data-testid="service-accordion-shpaklovka" data-orientation="vertical"><div data-state="open" data-orientation="vertical" class="border-b border-white/10"><h3 data-orientation="vertical" data-state="open" class="flex"><button type="button" aria-controls="radix-:r1:" aria-expanded="true" data-state="open" data-orientation="vertical" id="radix-:r0:" class="flex flex-1 items-center justify-between transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 font-heading font-semibold text-left text-sm md:text-base hover:text-primary hover:no-underline py-5" data-testid="service-group-shpaklovka-0" data-radix-collection-item=""><span class="flex items-center gap-3"><span class="font-mono text-xs text-muted-foreground">01</span>Подготвителни дейности</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></h3><div data-state="open" id="radix-:r1:" role="region" aria-labelledby="radix-:r0:" data-orientation="vertical" class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width); transition-duration: 0s; animation-name: none; --radix-collapsible-content-height: 157px; --radix-collapsible-content-width: 670px;"><div class="pb-4 pt-0"><ul class="pb-5 space-y-2.5"><li class="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-primary shrink-0 mt-0.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Къртене и чистене на стара мазилка</li><li class="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-primary shrink-0 mt-0.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Премахване на тапети и постни бои</li><li class="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-primary shrink-0 mt-0.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Нанасяне на дълбокопроникващ / контактен грунд</li><li class="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-primary shrink-0 mt-0.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Цялостно предпазно фолио и облепване със строително тиксо</li></ul></div></div></div><div data-state="closed" data-orientation="vertical" class="border-b border-white/10"><h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-controls="radix-:r3:" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-:r2:" class="flex flex-1 items-center justify-between transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 font-heading font-semibold text-left text-sm md:text-base hover:text-primary hover:no-underline py-5" data-testid="service-group-shpaklovka-1" data-radix-collection-item=""><span class="flex items-center gap-3"><span class="font-mono text-xs text-muted-foreground">02</span>Шпакловане и изравняване</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></h3><div data-state="closed" id="radix-:r3:" hidden="" role="region" aria-labelledby="radix-:r2:" data-orientation="vertical" class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"></div></div><div data-state="closed" data-orientation="vertical" class="border-b border-white/10"><h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-controls="radix-:r5:" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-:r4:" class="flex flex-1 items-center justify-between transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 font-heading font-semibold text-left text-sm md:text-base hover:text-primary hover:no-underline py-5" data-testid="service-group-shpaklovka-2" data-radix-collection-item=""><span class="flex items-center gap-3"><span class="font-mono text-xs text-muted-foreground">03</span>Боядисване</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></h3><div data-state="closed" id="radix-:r5:" hidden="" role="region" aria-labelledby="radix-:r4:" data-orientation="vertical" class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"></div></div></div></div></div></div></div></div></section><section id="proces" class="py-24 md:py-32" data-testid="process-section"><div class="max-w-7xl mx-auto px-5 sm:px-8"><div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16"><div class="lg:col-span-4"><div class="lg:sticky lg:top-28"><div class="" style="opacity: 0; transform: translateY(36px);"><p class="font-mono text-sm tracking-[0.3em] uppercase text-primary mb-4" data-testid="process-kicker">Как работим</p><h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.08] mb-5">Четири стъпки. Нулева несигурност.</h2><p class="text-muted-foreground text-base md:text-lg max-w-2xl leading-relaxed">Всеки проект следва един и същ прецизен ред — от първото обаждане до финалния оглед и почистването.</p></div><div class="" style="opacity: 0; transform: translateY(36px);"><p class="font-heading font-black text-stroke text-[7rem] lg:text-[10rem] leading-none select-none hidden lg:block mt-8">04</p></div></div></div><div class="lg:col-span-8"><div class="" style="opacity: 0; transform: translateY(36px);"><div class="group flex gap-6 md:gap-10 py-8 md:py-10 border-t border-white/10 last:border-b hover:bg-white/[0.02] transition-colors duration-300 px-2 md:px-4" data-testid="process-step-1"><span class="font-mono text-primary text-sm md:text-base pt-1 shrink-0">/01</span><div><h3 class="font-heading font-bold text-lg md:text-2xl tracking-tight mb-3 group-hover:text-primary transition-colors duration-300">Запитване и консултация</h3><p class="text-muted-foreground text-sm md:text-base leading-relaxed max-w-xl">Уточняваме нуждите ви и всеки детайл по обекта — по телефона или чрез формата за запитване.</p></div></div></div><div class="" style="opacity: 0; transform: translateY(36px);"><div class="group flex gap-6 md:gap-10 py-8 md:py-10 border-t border-white/10 last:border-b hover:bg-white/[0.02] transition-colors duration-300 px-2 md:px-4" data-testid="process-step-2"><span class="font-mono text-primary text-sm md:text-base pt-1 shrink-0">/02</span><div><h3 class="font-heading font-bold text-lg md:text-2xl tracking-tight mb-3 group-hover:text-primary transition-colors duration-300">Оглед на място и прецизно замерване</h3><p class="text-muted-foreground text-sm md:text-base leading-relaxed max-w-xl">Безплатен оглед за София и региона. Замерване с лазер и оценка на реалното състояние.</p></div></div></div><div class="" style="opacity: 0; transform: translateY(36px);"><div class="group flex gap-6 md:gap-10 py-8 md:py-10 border-t border-white/10 last:border-b hover:bg-white/[0.02] transition-colors duration-300 px-2 md:px-4" data-testid="process-step-3"><span class="font-mono text-primary text-sm md:text-base pt-1 shrink-0">/03</span><div><h3 class="font-heading font-bold text-lg md:text-2xl tracking-tight mb-3 group-hover:text-primary transition-colors duration-300">Детайлна оферта и договор</h3><p class="text-muted-foreground text-sm md:text-base leading-relaxed max-w-xl">Прозрачни цени за труд и материали, в евро (€), без скрити такси. Фиксиран срок в писмен договор.</p></div></div></div><div class="" style="opacity: 0; transform: translateY(36px);"><div class="group flex gap-6 md:gap-10 py-8 md:py-10 border-t border-white/10 last:border-b hover:bg-white/[0.02] transition-colors duration-300 px-2 md:px-4" data-testid="process-step-4"><span class="font-mono text-primary text-sm md:text-base pt-1 shrink-0">/04</span><div><h3 class="font-heading font-bold text-lg md:text-2xl tracking-tight mb-3 group-hover:text-primary transition-colors duration-300">Чисто и качествено изпълнение</h3><p class="text-muted-foreground text-sm md:text-base leading-relaxed max-w-xl">Финален оглед заедно с вас, писмена гаранция и напълно почистен обект след нас.</p></div></div></div></div></div></div></section><section id="galeria" class="py-24 md:py-32" data-testid="gallery-section"><div class="max-w-7xl mx-auto px-5 sm:px-8"><div class="" style="opacity: 0; transform: translateY(36px);"><p class="font-mono text-sm tracking-[0.3em] uppercase text-primary mb-4" data-testid="gallery-kicker">Преди и След</p><h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.08] mb-5">Разликата се вижда в детайла.</h2><p class="text-muted-foreground text-base md:text-lg max-w-2xl leading-relaxed">Плъзнете дръжката, за да сравните — фабрично пилени ъгли под 45°, стъклено гладки тавани, нови инсталации и завършени бани и покриви.</p></div><div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><div class="" style="opacity: 0; transform: translateY(36px);"><div data-testid="compare-slider-banya" class="relative aspect-[4/3] overflow-hidden border border-white/10 select-none cursor-ew-resize touch-none group"><img alt="След — Цялостен ремонт на баня" class="absolute inset-0 w-full h-full object-cover" draggable="false" src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&amp;w=1200&amp;auto=format&amp;fit=crop"><div class="absolute inset-0 overflow-hidden" style="width: 50%;"><img alt="Преди — Цялостен ремонт на баня" class="absolute inset-0 h-full object-cover grayscale" draggable="false" src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" style="width: 100vw; max-width: none;"></div><div class="absolute top-0 bottom-0 w-px bg-primary" style="left: 50%;"><span class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-horizontal w-5 h-5 text-white" aria-hidden="true"><path d="m18 8 4 4-4 4"></path><path d="M2 12h20"></path><path d="m6 8-4 4 4 4"></path></svg></span></div><span class="absolute top-4 left-4 font-mono text-xs tracking-widest bg-black/60 backdrop-blur px-3 py-1.5 text-white/90">ПРЕДИ</span><span class="absolute top-4 right-4 font-mono text-xs tracking-widest bg-primary px-3 py-1.5 text-white">СЛЕД</span><div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-4 pt-10"><p class="font-heading font-bold text-sm md:text-base">Цялостен ремонт на баня</p><p class="text-xs text-white/70 mt-0.5">Джоли под 45°, вградена структура, линеен сифон</p></div></div></div><div class="" style="opacity: 0; transform: translateY(36px);"><div data-testid="compare-slider-steni" class="relative aspect-[4/3] overflow-hidden border border-white/10 select-none cursor-ew-resize touch-none group"><img alt="След — Шпакловка и боядисване" class="absolute inset-0 w-full h-full object-cover" draggable="false" src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&amp;w=1200&amp;auto=format&amp;fit=crop"><div class="absolute inset-0 overflow-hidden" style="width: 50%;"><img alt="Преди — Шпакловка и боядисване" class="absolute inset-0 h-full object-cover grayscale" draggable="false" src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" style="width: 100vw; max-width: none;"></div><div class="absolute top-0 bottom-0 w-px bg-primary" style="left: 50%;"><span class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-horizontal w-5 h-5 text-white" aria-hidden="true"><path d="m18 8 4 4-4 4"></path><path d="M2 12h20"></path><path d="m6 8-4 4 4 4"></path></svg></span></div><span class="absolute top-4 left-4 font-mono text-xs tracking-widest bg-black/60 backdrop-blur px-3 py-1.5 text-white/90">ПРЕДИ</span><span class="absolute top-4 right-4 font-mono text-xs tracking-widest bg-primary px-3 py-1.5 text-white">СЛЕД</span><div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-4 pt-10"><p class="font-heading font-bold text-sm md:text-base">Шпакловка и боядисване</p><p class="text-xs text-white/70 mt-0.5">Сатенена шпакловка и машинно боядисване на таван</p></div></div></div><div class="" style="opacity: 0; transform: translateY(36px);"><div data-testid="compare-slider-pokriv" class="relative aspect-[4/3] overflow-hidden border border-white/10 select-none cursor-ew-resize touch-none group"><img alt="След — Ремонт на покрив" class="absolute inset-0 w-full h-full object-cover" draggable="false" src="https://images.unsplash.com/photo-1632759145351-1d592919f522?q=80&amp;w=1200&amp;auto=format&amp;fit=crop"><div class="absolute inset-0 overflow-hidden" style="width: 50%;"><img alt="Преди — Ремонт на покрив" class="absolute inset-0 h-full object-cover grayscale" draggable="false" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" style="width: 100vw; max-width: none;"></div><div class="absolute top-0 bottom-0 w-px bg-primary" style="left: 50%;"><span class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-horizontal w-5 h-5 text-white" aria-hidden="true"><path d="m18 8 4 4-4 4"></path><path d="M2 12h20"></path><path d="m6 8-4 4 4 4"></path></svg></span></div><span class="absolute top-4 left-4 font-mono text-xs tracking-widest bg-black/60 backdrop-blur px-3 py-1.5 text-white/90">ПРЕДИ</span><span class="absolute top-4 right-4 font-mono text-xs tracking-widest bg-primary px-3 py-1.5 text-white">СЛЕД</span><div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-4 pt-10"><p class="font-heading font-bold text-sm md:text-base">Ремонт на покрив</p><p class="text-xs text-white/70 mt-0.5">Пренаредени керемиди, нова подкеремидна мембрана</p></div></div></div></div></div></section><section id="zashto-nas" class="py-24 md:py-32 relative blueprint-grid" data-testid="whyus-section"><div class="max-w-7xl mx-auto px-5 sm:px-8"><div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start"><div class="lg:col-span-5"><div class="lg:sticky lg:top-28"><div class="" style="opacity: 0; transform: translateY(36px);"><p class="font-mono text-sm tracking-[0.3em] uppercase text-primary mb-4" data-testid="whyus-kicker">Защо нас</p><h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.08] mb-5">Доверието се гради с факти, не с обещания.</h2><p class="text-muted-foreground text-base md:text-lg max-w-2xl leading-relaxed">Работим така, както бихме искали да работят в нашия собствен дом — прецизно, чисто и с отговорност.</p></div><div class="" style="opacity: 0; transform: translateY(36px);"><p class="font-heading font-black text-stroke text-[7rem] lg:text-[10rem] leading-none select-none hidden lg:block mt-8">100%</p></div></div></div><div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-px bg-white/10 border border-white/10"><div class="bg-background" style="opacity: 0; transform: translateY(36px);"><div class="p-7 md:p-8 h-full group hover:bg-white/[0.02] transition-colors duration-300" data-testid="whyus-card-0"><span class="w-11 h-11 border border-primary/40 flex items-center justify-center mb-5 group-hover:bg-primary group-hover:border-primary transition-[background-color,border-color] duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text w-5 h-5 text-primary group-hover:text-white transition-colors duration-300" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg></span><h3 class="font-heading font-bold text-base md:text-lg mb-2.5 tracking-tight">Фиксирана цена в договор</h3><p class="text-muted-foreground text-sm leading-relaxed">Цената от офертата е финална. Никакви „непредвидени разходи“ по средата на ремонта.</p></div></div><div class="bg-background" style="opacity: 0; transform: translateY(36px);"><div class="p-7 md:p-8 h-full group hover:bg-white/[0.02] transition-colors duration-300" data-testid="whyus-card-1"><span class="w-11 h-11 border border-primary/40 flex items-center justify-center mb-5 group-hover:bg-primary group-hover:border-primary transition-[background-color,border-color] duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-badge-check w-5 h-5 text-primary group-hover:text-white transition-colors duration-300" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path><path d="m9 12 2 2 4-4"></path></svg></span><h3 class="font-heading font-bold text-base md:text-lg mb-2.5 tracking-tight">Писмена гаранция</h3><p class="text-muted-foreground text-sm leading-relaxed">Всяка извършена дейност е покрита с писмена гаранция за качество на труда.</p></div></div><div class="bg-background" style="opacity: 0; transform: translateY(36px);"><div class="p-7 md:p-8 h-full group hover:bg-white/[0.02] transition-colors duration-300" data-testid="whyus-card-2"><span class="w-11 h-11 border border-primary/40 flex items-center justify-center mb-5 group-hover:bg-primary group-hover:border-primary transition-[background-color,border-color] duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wallet w-5 h-5 text-primary group-hover:text-white transition-colors duration-300" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"></path><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path></svg></span><h3 class="font-heading font-bold text-base md:text-lg mb-2.5 tracking-tight">Поетапно плащане</h3><p class="text-muted-foreground text-sm leading-relaxed">Плащате само за реално свършената работа — етап по етап, срещу протокол.</p></div></div><div class="bg-background" style="opacity: 0; transform: translateY(36px);"><div class="p-7 md:p-8 h-full group hover:bg-white/[0.02] transition-colors duration-300" data-testid="whyus-card-3"><span class="w-11 h-11 border border-primary/40 flex items-center justify-center mb-5 group-hover:bg-primary group-hover:border-primary transition-[background-color,border-color] duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-5 h-5 text-primary group-hover:text-white transition-colors duration-300" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg></span><h3 class="font-heading font-bold text-base md:text-lg mb-2.5 tracking-tight">Чист обект след нас</h3><p class="text-muted-foreground text-sm leading-relaxed">Работим с предпазни фолиа и оставяме обекта почистен. Без строителен боклук по коридорите.</p></div></div></div></div></div></section><section id="zapitvane" class="py-24 md:py-32 bg-card border-y border-white/10" data-testid="quote-section"><div class="max-w-7xl mx-auto px-5 sm:px-8"><div class="grid grid-cols-1 lg:grid-cols-12 gap-12"><div class="lg:col-span-5"><div class="" style="opacity: 0; transform: translateY(36px);"><p class="font-mono text-sm tracking-[0.3em] uppercase text-primary mb-4" data-testid="quote-kicker">Запитване / Калкулатор</p><h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.08] mb-5">Поискайте оферта за 60 секунди.</h2><p class="text-muted-foreground text-base md:text-lg max-w-2xl leading-relaxed">Три бързи стъпки — след това се свързваме с вас до 24 часа, за да уговорим безплатен оглед.</p></div><ul class="mt-8 space-y-3 text-sm text-muted-foreground"><li class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 text-primary mt-0.5 shrink-0" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg> Безплатен и необвързващ оглед за София и региона</li><li class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 text-primary mt-0.5 shrink-0" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg> Детайлна оферта в евро (€) — труд и материали по позиции</li><li class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-4 h-4 text-primary mt-0.5 shrink-0" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg> Фиксирана цена и срок, записани в договор</li></ul></div><div class="lg:col-span-7"><div class="border border-white/10 bg-background p-6 md:p-10"><div class="flex items-center gap-2 mb-8" data-testid="quote-progress"><div class="h-1 flex-1 transition-colors duration-300 bg-primary"></div><div class="h-1 flex-1 transition-colors duration-300 bg-white/10"></div><div class="h-1 flex-1 transition-colors duration-300 bg-white/10"></div><span class="font-mono text-xs text-muted-foreground ml-3">1/3</span></div><div style="opacity: 1; transform: none;"><p class="font-heading font-bold text-lg mb-5">Каква услуга ви трябва?</p><div class="grid grid-cols-1 sm:grid-cols-2 gap-3"><button type="button" data-testid="quote-service-shpaklovka" class="w-full text-left border px-5 py-4 font-medium text-sm md:text-base transition-[background-color,border-color,color] duration-200 border-white/10 text-muted-foreground hover:border-white/30 hover:text-foreground">Шпакловка и боядисване</button><button type="button" data-testid="quote-service-banya" class="w-full text-left border px-5 py-4 font-medium text-sm md:text-base transition-[background-color,border-color,color] duration-200 border-white/10 text-muted-foreground hover:border-white/30 hover:text-foreground">Цялостен ремонт на баня</button><button type="button" data-testid="quote-service-vik" class="w-full text-left border px-5 py-4 font-medium text-sm md:text-base transition-[background-color,border-color,color] duration-200 border-white/10 text-muted-foreground hover:border-white/30 hover:text-foreground">ВиК услуги</button><button type="button" data-testid="quote-service-pokriv" class="w-full text-left border px-5 py-4 font-medium text-sm md:text-base transition-[background-color,border-color,color] duration-200 border-white/10 text-muted-foreground hover:border-white/30 hover:text-foreground">Ремонт на покрив</button><button type="button" data-testid="quote-service-cyalosten" class="w-full text-left border px-5 py-4 font-medium text-sm md:text-base transition-[background-color,border-color,color] duration-200 border-white/10 text-muted-foreground hover:border-white/30 hover:text-foreground">Цялостен ремонт</button></div></div><div class="flex items-center justify-between mt-10 pt-6 border-t border-white/10"><button type="button" data-testid="quote-back-button" disabled="" class="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground disabled:opacity-0 transition-colors duration-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left w-4 h-4" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg> Назад</button><button type="button" data-testid="quote-next-button" disabled="" class="inline-flex items-center gap-2 bg-primary hover:bg-orange-500 disabled:opacity-40 disabled:cursor-not-allowed text-white font-heading font-bold px-7 py-3.5 rounded-full text-sm transition-[background-color] duration-200">Напред <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button></div></div></div></div></div></section><section id="faq" class="py-24 md:py-32" data-testid="faq-section"><div class="max-w-7xl mx-auto px-5 sm:px-8"><div class="grid grid-cols-1 lg:grid-cols-12 gap-12"><div class="lg:col-span-4"><div class="lg:sticky lg:top-28"><div class="" style="opacity: 0; transform: translateY(36px);"><p class="font-mono text-sm tracking-[0.3em] uppercase text-primary mb-4" data-testid="faq-h-kicker">Често задавани въпроси</p><h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.08] mb-5">Ясни отговори, преди още да попитате.</h2></div></div></div><div class="lg:col-span-8"><div class="" style="opacity: 0; transform: translateY(36px);"><div class="border-t border-white/10" data-testid="faq-accordion" data-orientation="vertical"><div data-state="closed" data-orientation="vertical" class="border-b border-white/10"><h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-controls="radix-:r8:" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-:r7:" class="flex flex-1 items-center justify-between transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 font-heading font-semibold text-left text-sm md:text-base hover:text-primary hover:no-underline py-6" data-testid="faq-question-0" data-radix-collection-item=""><span class="flex gap-4"><span class="font-mono text-xs text-primary pt-1">01</span>Колко време отнема изпълнението?</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></h3><div data-state="closed" id="radix-:r8:" hidden="" role="region" aria-labelledby="radix-:r7:" data-orientation="vertical" class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"></div></div><div data-state="closed" data-orientation="vertical" class="border-b border-white/10"><h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-controls="radix-:ra:" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-:r9:" class="flex flex-1 items-center justify-between transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 font-heading font-semibold text-left text-sm md:text-base hover:text-primary hover:no-underline py-6" data-testid="faq-question-1" data-radix-collection-item=""><span class="flex gap-4"><span class="font-mono text-xs text-primary pt-1">02</span>Как става плащането?</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></h3><div data-state="closed" id="radix-:ra:" hidden="" role="region" aria-labelledby="radix-:r9:" data-orientation="vertical" class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"></div></div><div data-state="closed" data-orientation="vertical" class="border-b border-white/10"><h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-controls="radix-:rc:" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-:rb:" class="flex flex-1 items-center justify-between transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 font-heading font-semibold text-left text-sm md:text-base hover:text-primary hover:no-underline py-6" data-testid="faq-question-2" data-radix-collection-item=""><span class="flex gap-4"><span class="font-mono text-xs text-primary pt-1">03</span>Наистина ли огледът е безплатен?</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></h3><div data-state="closed" id="radix-:rc:" hidden="" role="region" aria-labelledby="radix-:rb:" data-orientation="vertical" class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"></div></div><div data-state="closed" data-orientation="vertical" class="border-b border-white/10"><h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-controls="radix-:re:" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-:rd:" class="flex flex-1 items-center justify-between transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 font-heading font-semibold text-left text-sm md:text-base hover:text-primary hover:no-underline py-6" data-testid="faq-question-3" data-radix-collection-item=""><span class="flex gap-4"><span class="font-mono text-xs text-primary pt-1">04</span>Давате ли гаранция за свършената работа?</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></h3><div data-state="closed" id="radix-:re:" hidden="" role="region" aria-labelledby="radix-:rd:" data-orientation="vertical" class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"></div></div><div data-state="closed" data-orientation="vertical" class="border-b border-white/10"><h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-controls="radix-:rg:" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-:rf:" class="flex flex-1 items-center justify-between transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 font-heading font-semibold text-left text-sm md:text-base hover:text-primary hover:no-underline py-6" data-testid="faq-question-4" data-radix-collection-item=""><span class="flex gap-4"><span class="font-mono text-xs text-primary pt-1">05</span>Кой осигурява материалите?</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></h3><div data-state="closed" id="radix-:rg:" hidden="" role="region" aria-labelledby="radix-:rf:" data-orientation="vertical" class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"></div></div><div data-state="closed" data-orientation="vertical" class="border-b border-white/10"><h3 data-orientation="vertical" data-state="closed" class="flex"><button type="button" aria-controls="radix-:ri:" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-:rh:" class="flex flex-1 items-center justify-between transition-all [&amp;[data-state=open]&gt;svg]:rotate-180 font-heading font-semibold text-left text-sm md:text-base hover:text-primary hover:no-underline py-6" data-testid="faq-question-5" data-radix-collection-item=""><span class="flex gap-4"><span class="font-mono text-xs text-primary pt-1">06</span>Работите ли в обзаведени жилища?</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></h3><div data-state="closed" id="radix-:ri:" hidden="" role="region" aria-labelledby="radix-:rh:" data-orientation="vertical" class="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"></div></div></div></div></div></div></div></section></main><footer class="border-t border-white/10 bg-card" data-testid="footer"><div class="max-w-7xl mx-auto px-5 sm:px-8 py-16 md:py-20"><div class="grid grid-cols-1 md:grid-cols-3 gap-12"><div><div class="flex items-center gap-3 mb-5"><span class="w-9 h-9 bg-primary flex items-center justify-center font-heading font-black text-white text-lg">М</span><span class="font-heading font-bold text-lg">МайсторРемонти</span></div><p class="text-muted-foreground text-sm leading-relaxed max-w-xs">Професионални ремонтни дейности — шпакловка, боядисване, бани ключ до ключ, ВиК и покриви. София и региона.</p></div><div><p class="font-mono text-xs tracking-[0.3em] uppercase text-muted-foreground mb-5">Навигация</p><nav class="flex flex-col gap-3"><a href="#uslugi" data-testid="footer-nav-uslugi" class="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 w-fit">Услуги</a><a href="#proces" data-testid="footer-nav-proces" class="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 w-fit">Процес</a><a href="#galeria" data-testid="footer-nav-galeria" class="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 w-fit">Преди и След</a><a href="#zashto-nas" data-testid="footer-nav-zashto-nas" class="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 w-fit">Защо нас</a><a href="#zapitvane" data-testid="footer-nav-zapitvane" class="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 w-fit">Запитване</a></nav></div><div><p class="font-mono text-xs tracking-[0.3em] uppercase text-muted-foreground mb-5">Контакти</p><div class="space-y-4 text-sm"><a href="tel:+359881234567" data-testid="footer-phone" class="flex items-center gap-3 hover:text-primary transition-colors duration-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-4 h-4 text-primary" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg> +359 88 123 4567</a><div class="flex items-center gap-3 text-muted-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle w-4 h-4 text-primary" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg><a href="viber://chat?number=%2B359881234567" data-testid="footer-viber" class="hover:text-primary transition-colors duration-200">Viber</a><span class="text-white/20">·</span><a href="https://wa.me/359881234567" data-testid="footer-whatsapp" class="hover:text-primary transition-colors duration-200">WhatsApp</a></div><p class="flex items-center gap-3 text-muted-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-4 h-4 text-primary" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg> София и региона</p><p class="flex items-center gap-3 text-muted-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-4 h-4 text-primary" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Пон – Съб: 08:00 – 19:00</p></div><a href="tel:+359881234567" data-testid="footer-cta" class="mt-7 inline-flex items-center gap-2 bg-primary hover:bg-orange-500 text-white font-heading font-bold px-6 py-3 rounded-full text-sm transition-[background-color] duration-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-4 h-4" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg> Обади се за безплатен оглед</a></div></div><div class="mt-14 pt-7 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3 text-xs text-muted-foreground"><p>© 2026 МайсторРемонти. Всички права запазени.</p><a href="/admin" data-testid="footer-admin-link" class="hover:text-primary transition-colors duration-200 w-fit">Вход за администратор</a></div></div></footer><div class="md:hidden fixed bottom-4 inset-x-4 z-50" data-testid="mobile-action-bar"><div class="bg-slate-900/70 backdrop-blur-xl border border-white/15 rounded-full p-1.5 flex gap-1.5 shadow-2xl"><a href="tel:+359881234567" data-testid="mobilebar-call" class="flex-1 flex items-center justify-center gap-2 bg-primary text-white font-heading font-bold text-sm py-3.5 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-4 h-4" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg> Обади се</a><a href="viber://chat?number=%2B359881234567" data-testid="mobilebar-viber" class="flex-1 flex items-center justify-center gap-2 bg-violet-600 text-white font-heading font-bold text-sm py-3.5 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle w-4 h-4" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg> Viber</a><a href="https://wa.me/359881234567" data-testid="mobilebar-whatsapp" class="flex-1 flex items-center justify-center gap-2 bg-emerald-600 text-white font-heading font-bold text-sm py-3.5 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle w-4 h-4" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg> WhatsApp</a></div></div><section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section></div></div><script type="text/javascript" crossorigin="anonymous" src="https://ap.emergent.sh/static/1.421.0/web-vitals-with-attribution.js"></script><script type="text/javascript" crossorigin="anonymous" src="https://ap.emergent.sh/static/1.421.0/dead-clicks-autocapture.js"></script><script type="text/javascript" crossorigin="anonymous" src="https://ap.emergent.sh/static/1.421.0/posthog-recorder.js"></script><script type="text/javascript" crossorigin="anonymous" src="https://ap.emergent.sh/static/1.421.0/surveys.js"></script><script type="text/javascript" crossorigin="anonymous" src="https://ap.emergent.sh/array/phc_DbsPb39SRc8z3EiQ6Dhj6ikv4H4rTKcht9d4sZSesceP/config.js"></script><script>!function(e,r){var t,s,o,i;r.__SV||(window.posthog=r,r._i=[],r.init=function(n,a,p){function c(e,r){var t=r.split(".");2==t.length&&(e=e[t[0]],r=t[1]),e[r]=function(){e.push([r].concat(Array.prototype.slice.call(arguments,0)))}}(o=e.createElement("script")).type="text/javascript",o.crossOrigin="anonymous",o.async=!0,o.src=a.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(i=e.getElementsByTagName("script")[0]).parentNode.insertBefore(o,i);var g=r;for(void 0!==p?g=r[p]=[]:p="posthog",g.people=g.people||[],g.toString=function(e){var r="posthog";return"posthog"!==p&&(r+="."+p),e||(r+=" (stub)"),r},g.people.toString=function(){return g.toString(1)+".people (stub)"},t="init me ws ys ps bs capture je Di ks register register_once register_for_session unregister unregister_for_session Ps getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Es $s createPersonProfile Is opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ss debug xs getPageViewId captureTraceFeedback captureTraceMetric".split(" "),s=0;s<t.length;s++)c(g,t[s]);r._i.push([n,a,p])},r.__SV=1)}(document,window.posthog||[]),posthog.init("phc_DbsPb39SRc8z3EiQ6Dhj6ikv4H4rTKcht9d4sZSesceP",{api_host:"https://ap.emergent.sh",person_profiles:"identified_only",session_recording:{recordCrossOriginIframes:!0,capturePerformance:!1}})</script></body></html>
+<!-- FRAME: about:blank -->
+<html><head></head><body style=""></body></html>
+<!-- FRAME: https://gum.criteo.com/syncframe?topUrl=app.emergent.sh&origin=onetag#{%22bundle%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22cw%22:false,%22optout%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22origin%22:%22onetag%22,%22tld%22:%22app.emergent.sh%22,%22topUrl%22:%22app.emergent.sh%22,%22version%22:%225_48_0%22,%22ifa%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22lsw%22:true,%22pm%22:0,%22requestId%22:%2242725953-e912-4070-bfc2-12f109cde15a%22} -->
+<html><head>
+    <script type="text/javascript">
+        !function(){"use strict";var t,n,i,o,r=function(n,t){return(r=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(n,t){n.__proto__=t}||function(n,t){for(var i in t)t.hasOwnProperty(i)&&(n[i]=t[i])})(n,t)};(n=t=t||{})[n.None=0]="None",n[n.Cookie=1]="Cookie",n[n.LocalStorage=2]="LocalStorage",n[n.Delegation=4]="Delegation",(o=i=i||{})[o.Unknown=0]="Unknown",o[o.Deactivated=1]="Deactivated",o[o.Activated=2]="Activated";var e=(u.fromUserIdentificationData=function(n){return new u(n.value,n.origin)},u.fromValue=function(n){return new u(n,t.None)},u.prototype.hasValue=function(){return""!==String(this.value)&&null!==this.value&&void 0!==this.value},u);function u(n,t){this.value=n,this.origin=t}var s,c,f;r(s=a,c=f=e),s.prototype=null===c?Object.create(c):(h.prototype=c.prototype,new h),a.prototype.hasValue=function(){return""!==String(this.value)&&null!==this.value&&void 0!==this.value},a.prototype.saveOnAllStorages=function(){if(this.hasValue()){var n="boolean"==typeof this.value?this.value?"1":"0":String(this.value);this.storageAdapter.writeToAllStorages(this.storageKey,n,this.expirationTimeHours)}},a.prototype.toJSON=function(){return{value:this.value,origin:this.origin}};function h(){this.constructor=s}function a(n,t,i,o,r){var e=f.call(this,i,o)||this;return e.storageKey=n,e.expirationTimeHours=t,e.storageAdapter=r,e}function v(){}(new(v.prototype.Start=function(){!function(n,t){t.parent.postMessage(n,"*")}({isCriteoMessage:!0},window)},v)).Start()}();
+
+    </script>
+</head>
+<body>
+
+</body></html>
