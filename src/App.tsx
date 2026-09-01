@@ -1,28 +1,15 @@
-import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection';
-import ServicesSection from './components/ServicesSection';
-import ProcessSection from './components/ProcessSection';
-import BeforeAfterSection from './components/BeforeAfterSection';
-import TrustSection from './components/TrustSection';
-import InquirySection from './components/InquirySection';
-import FaqSection from './components/FaqSection';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import GalleryPage from "./pages/GalleryPage";
 
 function App() {
   return (
-    <div className="min-h-screen text-foreground font-sans">
-      <Navbar />
-      <main>
-        <HeroSection />
-        <ServicesSection />
-        <ProcessSection />
-        <BeforeAfterSection />
-        <TrustSection />
-        <InquirySection />
-        <FaqSection />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
+      </Routes>
+    </Router>
   );
 }
 

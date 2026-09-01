@@ -1,75 +1,73 @@
-import { FileText, BadgeCheck, CreditCard, Sparkles } from "lucide-react";
+import { FileText, BadgeCheck, Wallet, Sparkles } from "lucide-react";
 
 export default function TrustSection() {
-  const features = [
+  const cards = [
     {
-      icon: <FileText className="w-5 h-5" />,
+      icon: FileText,
       title: "Фиксирана цена в договор",
       desc: "Цената от офертата е финална. Никакви „непредвидени разходи“ по средата на ремонта."
     },
     {
-      icon: <BadgeCheck className="w-5 h-5" />,
+      icon: BadgeCheck,
       title: "Писмена гаранция",
       desc: "Всяка извършена дейност е покрита с писмена гаранция за качество на труда."
     },
     {
-      icon: <CreditCard className="w-5 h-5" />,
+      icon: Wallet,
       title: "Поетапно плащане",
       desc: "Плащате само за реално свършената работа — етап по етап, срещу протокол."
     },
     {
-      icon: <Sparkles className="w-5 h-5" />,
+      icon: Sparkles,
       title: "Чист обект след нас",
       desc: "Работим с предпазни фолиа и оставяме обекта почистен. Без строителен боклук по коридорите."
     }
   ];
 
   return (
-    <section id="trust" className="py-24 lg:py-32 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
-          
-          {/* Left Column */}
-          <div className="w-full lg:w-1/2">
-            <p className="font-mono text-sm tracking-[0.3em] uppercase text-primary mb-6">
-              ЗАЩО НАС
-            </p>
-            <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tighter leading-[1.05] mb-6">
-              Доверието се гради с факти, не с обещания.
-            </h2>
-            <p className="text-muted-foreground text-lg md:text-xl max-w-lg leading-relaxed">
-              Работим така, както бихме искали да работят в нашия собствен дом — прецизно, чисто и с отговорност.
-            </p>
-            
-            <div className="mt-16 lg:mt-24">
-              <span 
-                className="font-heading font-black text-[10rem] lg:text-[14rem] leading-none opacity-40 block -ml-2 select-none tracking-tighter"
-                style={{ WebkitTextStroke: '2px rgba(255, 255, 255, 0.5)', color: 'transparent' }}
-              >
-                100%
-              </span>
+    <section id="zashto-nas" className="py-24 md:py-32 relative blueprint-grid bg-[#16171A]" data-testid="whyus-section">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <div className="lg:col-span-5">
+            <div className="lg:sticky lg:top-28">
+              <div>
+                <p className="font-mono text-sm tracking-[0.3em] uppercase text-primary mb-4" data-testid="whyus-kicker">
+                  Защо нас
+                </p>
+                <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-[1.08] mb-5">
+                  Доверието се гради с факти, не с обещания.
+                </h2>
+                <p className="text-muted-foreground text-base md:text-lg max-w-2xl leading-relaxed">
+                  Работим така, както бихме искали да работят в нашия собствен дом — прецизно, чисто и с отговорност.
+                </p>
+              </div>
+              <div>
+                <p className="font-heading font-black text-stroke text-[7rem] lg:text-[10rem] leading-none select-none hidden lg:block mt-8">
+                  100%
+                </p>
+              </div>
             </div>
           </div>
-          
-          {/* Right Column (2x2 Grid) */}
-          <div className="w-full lg:w-1/2 rounded-lg lg:rounded-2xl overflow-hidden border border-white/10 mt-10 lg:mt-0">
-            <div className="grid grid-cols-1 sm:grid-cols-2 bg-white/10 gap-px">
-              {features.map((feature, i) => (
-                <div key={i} className="bg-background p-8 lg:p-10 flex flex-col">
-                  <div className="w-12 h-12 flex items-center justify-center border border-white/10 text-primary mb-6 rounded-md bg-background/50">
-                    {feature.icon}
-                  </div>
-                  <h3 className="font-heading font-bold text-lg lg:text-xl mb-3 tracking-tight">
-                    {feature.title}
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-px bg-[#26292E] border border-[#26292E]">
+            {cards.map((card, idx) => (
+              <div key={idx} className="bg-[#151719]">
+                <div 
+                  className="p-7 md:p-8 h-full group hover:bg-white/[0.02] transition-colors duration-300" 
+                  data-testid={`whyus-card-${idx}`}
+                >
+                  <span className="w-11 h-11 border border-primary/40 flex items-center justify-center mb-5 group-hover:bg-primary group-hover:border-primary transition-[background-color,border-color] duration-300">
+                    <card.icon className="w-5 h-5 text-primary group-hover:text-white transition-colors duration-300" aria-hidden="true" />
+                  </span>
+                  <h3 className="font-heading font-extrabold text-base md:text-lg mb-2.5 tracking-tight">
+                    {card.title}
                   </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    {feature.desc}
+                    {card.desc}
                   </p>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
-
         </div>
       </div>
     </section>

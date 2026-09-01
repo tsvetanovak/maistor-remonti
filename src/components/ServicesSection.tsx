@@ -1,87 +1,11 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { ChevronDown, CheckCircle2 } from "lucide-react";
+import { ChevronDown, Check } from "lucide-react";
 
 const categories = [
   {
     id: 'A',
-    title: 'Шпакловка и бояджийски услуги',
-    desc: 'Стъклена гладкост на стени и тавани',
-    items: [
-      { 
-        num: '01', 
-        title: 'Подготвителни дейности',
-        details: [
-          'Къртене и чистене на стара мазилка',
-          'Премахване на тапети и постни бои',
-          'Нанасяне на дълбокопроникващ / контактен грунд',
-          'Цялостно предпазно фолио и облепване със строително тиксо'
-        ]
-      },
-      { 
-        num: '02', 
-        title: 'Шпакловане и изравняване',
-        details: [
-          'Шпакловка с мрежа (армиране срещу пукнатини)',
-          'Гипсова шпакловка за големи неравности',
-          'Шпакловка на гипсокартон (фугираща лента и винтове)',
-          'Фина сатенена шпакловка за стъклена гладкост',
-          'Монтаж на алуминиеви ъгли',
-          'Безпрахово машинно или прецизно ръчно шлайфане'
-        ]
-      },
-      { 
-        num: '03', 
-        title: 'Боядисване',
-        details: [
-          'Латекс (2–3 ръце)',
-          'Боядисване на блажна / акрилна основа за влажни зони, дограма, тръби и радиатори',
-          'Машинно боядисване за перфектен финиш',
-          'Декоративни мазилки — Травертино, венециански и перлени ефекти',
-          'Прецизно лазерно отсичане на цветове'
-        ]
-      },
-    ]
-  },
-  {
-    id: 'B',
-    title: 'ВиК услуги и инсталации',
-    desc: 'От аварийни течове до нова инсталация',
-    items: [
-      { 
-        num: '01', 
-        title: 'Аварийни дейности',
-        details: [
-          'Отстраняване на течове',
-          'Откриване на скрити аварии',
-          'Отпушване на вертикални / хоризонтални щрангове',
-          'Отпушване на сифони и тоалетни'
-        ]
-      },
-      { 
-        num: '02', 
-        title: 'Монтажни работи',
-        details: [
-          'Монтаж на санитария — моноблокове, мивки, бидета, структури за вграждане',
-          'Монтаж на смесители и термостати',
-          'Свързване на бойлери, перални и съдомиялни машини',
-          'Монтаж на душ кабини и стъклени паравани'
-        ]
-      },
-      {
-        num: '03',
-        title: 'Ремонти и подмяна',
-        details: [
-          'Подмяна на стари щрангове с модерни PP-R тръби',
-          'Монтаж / пломбиране на водомери',
-          'Ремонт на тоалетни казанчета',
-          'Подмяна на спирателни кранове'
-        ]
-      }
-    ]
-  },
-  {
-    id: 'C',
+    testId: 'banq',
     title: 'Цялостен ремонт на баня',
     desc: 'Ключ до ключ — от къртене до последния силикон',
     items: [
@@ -135,7 +59,87 @@ const categories = [
     ]
   },
   {
+    id: 'B',
+    testId: 'vik',
+    title: 'ВиК услуги и инсталации',
+    desc: 'От аварийни течове до нова инсталация',
+    items: [
+      { 
+        num: '01', 
+        title: 'Аварийни дейности',
+        details: [
+          'Отстраняване на течове',
+          'Откриване на скрити аварии',
+          'Отпушване на вертикални / хоризонтални щрангове',
+          'Отпушване на сифони и тоалетни'
+        ]
+      },
+      { 
+        num: '02', 
+        title: 'Монтажни работи',
+        details: [
+          'Монтаж на санитария — моноблокове, мивки, бидета, структури за вграждане',
+          'Монтаж на смесители и термостати',
+          'Свързване на бойлери, перални и съдомиялни машини',
+          'Монтаж на душ кабини и стъклени паравани'
+        ]
+      },
+      {
+        num: '03',
+        title: 'Ремонти и подмяна',
+        details: [
+          'Подмяна на стари щрангове с модерни PP-R тръби',
+          'Монтаж / пломбиране на водомери',
+          'Ремонт на тоалетни казанчета',
+          'Подмяна на спирателни кранове'
+        ]
+      }
+    ]
+  },
+  {
+    id: 'C',
+    testId: 'shpaklovka',
+    title: 'Шпакловка и бояджийски услуги',
+    desc: 'Стъклена гладкост на стени и тавани',
+    items: [
+      { 
+        num: '01', 
+        title: 'Подготвителни дейности',
+        details: [
+          'Къртене и чистене на стара мазилка',
+          'Премахване на тапети и постни бои',
+          'Нанасяне на дълбокопроникващ / контактен грунд',
+          'Цялостно предпазно фолио и облепване със строително тиксо'
+        ]
+      },
+      { 
+        num: '02', 
+        title: 'Шпакловане и изравняване',
+        details: [
+          'Шпакловка с мрежа (армиране срещу пукнатини)',
+          'Гипсова шпакловка за големи неравности',
+          'Шпакловка на гипсокартон (фугираща лента и винтове)',
+          'Фина сатенена шпакловка за стъклена гладкост',
+          'Монтаж на алуминиеви ъгли',
+          'Безпрахово машинно или прецизно ръчно шлайфане'
+        ]
+      },
+      { 
+        num: '03', 
+        title: 'Боядисване',
+        details: [
+          'Латекс (2–3 ръце)',
+          'Боядисване на блажна / акрилна основа за влажни зони, дограма, тръби и радиатори',
+          'Машинно боядисване за перфектен финиш',
+          'Декоративни мазилки — Травертино, венециански и перлени ефекти',
+          'Прецизно лазерно отсичане на цветове'
+        ]
+      },
+    ]
+  },
+  {
     id: 'D',
+    testId: 'pokriv',
     title: 'Ремонт на покриви и хидроизолация',
     desc: 'Сигурен покрив над главата през всеки сезон',
     items: [
@@ -193,97 +197,116 @@ export default function ServicesSection() {
   const [openItem, setOpenItem] = useState<string | null>("01");
 
   return (
-    <section id="services" className="py-24 bg-muted/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-16">
-          <p className="font-mono text-sm tracking-[0.3em] uppercase text-primary mb-4 flex items-center gap-3">
-            <span className="w-8 h-px bg-primary"></span>
+    <section id="uslugi" className="py-24 md:py-32 bg-[#212428] border-y border-white/10" data-testid="services-section">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8">
+        <div>
+          <p className="font-mono text-sm tracking-[0.3em] uppercase text-primary mb-4" data-testid="services-kicker">
             Услуги
           </p>
-          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.08] mb-5">
-            Детайлно. Категоризирано. Без скрити позиции.
+          <h2 className="font-heading text-3xl sm:text-4xl lg:text-[48px] font-black tracking-tight leading-[1.08] mb-5">
+            Детайлно. Категоризирано. Без скрити <br className="hidden lg:block" />позиции.
           </h2>
           <p className="text-muted-foreground text-base md:text-lg max-w-2xl leading-relaxed">
             Разгледайте пълния обхват на всяка категория — всяка оферта се изготвя позиция по позиция, с прозрачни цени в евро (€).
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-12 lg:items-start relative">
-          {/* Categories Sidebar */}
-          <div className="flex overflow-x-auto lg:flex-col gap-3 pb-4 lg:pb-0 lg:w-1/3 hide-scrollbar lg:sticky lg:top-32 h-fit">
-            {categories.map((cat) => {
-              const isActive = activeCategory.id === cat.id;
-              return (
-                <button
-                  key={cat.id}
-                  onClick={() => {
-                    setActiveCategory(cat);
-                    setOpenItem("01"); // Auto open first item on category change
-                  }}
-                  className={`shrink-0 lg:shrink flex flex-col text-left border px-5 py-4 rounded-xl transition-[background-color,border-color] duration-300 min-w-[240px] lg:min-w-0 ${
-                    isActive 
-                      ? 'bg-primary/10 border-primary' 
-                      : 'bg-transparent border-white/10 hover:border-white/30'
-                  }`}
-                >
-                  <span className="font-mono text-[10px] tracking-widest text-white/50 uppercase mb-1">
-                    Категория {cat.id}
-                  </span>
-                  <span className={`font-semibold transition-colors duration-300 ${isActive ? 'text-primary' : 'text-white/60 group-hover:text-white'}`}>
-                    {cat.title}
-                  </span>
-                </button>
-              );
-            })}
+        <div className="mt-12 grid grid-cols-1 lg:grid-cols-12 gap-10">
+          <div className="lg:col-span-4">
+            <div className="lg:sticky lg:top-28 flex lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-2 -mx-5 px-5 lg:mx-0 lg:px-0 scrollbar-hide snap-x" data-testid="services-tabs">
+              {categories.map((cat) => {
+                const isActive = activeCategory.id === cat.id;
+                return (
+                  <button
+                    key={cat.id}
+                    data-testid={`service-tab-${cat.testId}`}
+                    onClick={() => {
+                      setActiveCategory(cat);
+                      setOpenItem("01");
+                    }}
+                    className={`snap-start shrink-0 lg:shrink text-left border px-5 py-4 transition-[background-color,border-color] duration-300 min-w-[240px] max-w-[280px] lg:max-w-none lg:min-w-0 ${
+                      isActive 
+                        ? 'bg-primary/10 border-primary' 
+                        : 'bg-transparent border-white/10 hover:border-white/30'
+                    }`}
+                  >
+                    <span className={`font-mono text-xs ${isActive ? 'text-primary' : 'text-muted-foreground'}`}>
+                      Категория {cat.id}
+                    </span>
+                    <span className={`block font-heading font-extrabold text-base mt-1 leading-snug ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}>
+                      {cat.title}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+            
+            <div className="mt-4 flex items-center gap-2 text-muted-foreground lg:hidden">
+              <span className="text-xs uppercase tracking-widest font-mono">Плъзнете за още</span>
+              <div className="h-px bg-white/10 flex-1"></div>
+              <svg className="w-4 h-4 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </div>
           </div>
 
-          {/* Active Category Details */}
-          <div className="lg:w-2/3 bg-background border border-white/10 rounded-3xl p-6 md:p-10 shadow-2xl">
-            <p className="font-mono text-xs tracking-[0.3em] uppercase text-primary mb-2">
-              Категория {activeCategory.id}
-            </p>
-            <h3 className="font-heading font-extrabold text-xl md:text-2xl tracking-tight">
-              {activeCategory.title}
-            </h3>
-            <p className="text-muted-foreground text-sm mt-2 mb-8 pb-8 border-b border-white/10">
-              {activeCategory.desc}
-            </p>
-
-            <div className="space-y-2">
-              {activeCategory.items.map((item, idx) => (
-                <div key={idx} className="border-b border-white/5 last:border-0">
-                  <button
-                    onClick={() => setOpenItem(openItem === item.num ? null : item.num)}
-                    className="w-full flex flex-1 items-center justify-between transition-all font-heading font-semibold text-left text-sm md:text-base hover:text-primary hover:no-underline py-5"
-                  >
-                    <span className="flex items-center gap-4">
-                      <span className="font-mono text-xs text-muted-foreground">{item.num}</span>
-                      {item.title}
-                    </span>
-                    <ChevronDown className={`w-5 h-5 text-muted-foreground transition-transform duration-300 ${openItem === item.num ? 'rotate-180 text-primary' : ''}`} />
-                  </button>
-                  <AnimatePresence>
-                    {openItem === item.num && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3, ease: "easeInOut" }}
-                        className="overflow-hidden"
-                      >
-                        <div className="pb-6 pl-9 space-y-3">
-                          {item.details.map((detail, dIdx) => (
-                            <div key={dIdx} className="flex items-start gap-3">
-                              <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                              <span className="text-sm text-muted-foreground leading-relaxed">{detail}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+          <div className="lg:col-span-8">
+            <div>
+              <div className="border border-[#26292E] bg-[#151719]">
+                <div className="p-6 md:p-8 border-b border-[#26292E]">
+                  <p className="font-mono text-xs tracking-[0.3em] uppercase text-primary mb-2">
+                    Категория {activeCategory.id}
+                  </p>
+                  <h3 className="font-heading font-black text-xl md:text-2xl tracking-tight">
+                    {activeCategory.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm mt-2">
+                    {activeCategory.desc}
+                  </p>
                 </div>
-              ))}
+
+                <div className="px-6 md:px-8" data-testid={`service-accordion-${activeCategory.testId}`}>
+                  {activeCategory.items.map((item, idx) => (
+                    <div key={idx} className="border-b border-[#26292E] last:border-0" data-state={openItem === item.num ? "open" : "closed"}>
+                      <h3 className="flex">
+                        <button
+                          onClick={() => setOpenItem(openItem === item.num ? null : item.num)}
+                          data-state={openItem === item.num ? "open" : "closed"}
+                          className="flex flex-1 items-center justify-between transition-all font-heading font-semibold text-left text-sm md:text-base hover:text-primary hover:no-underline py-5 [&[data-state=open]>svg]:rotate-180"
+                        >
+                          <span className="flex items-center gap-3">
+                            <span className="font-mono text-xs text-muted-foreground">{item.num}</span>
+                            {item.title}
+                          </span>
+                          <ChevronDown className="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200" />
+                        </button>
+                      </h3>
+                      <AnimatePresence>
+                        {openItem === item.num && (
+                          <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: 'auto', opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            transition={{ duration: 0.2 }}
+                            className="overflow-hidden"
+                          >
+                            <div className="pb-4 pt-0">
+                              <ul className="pb-5 space-y-2.5">
+                                {item.details.map((detail, dIdx) => (
+                                  <li key={dIdx} className="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed">
+                                    <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                                    {detail}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
